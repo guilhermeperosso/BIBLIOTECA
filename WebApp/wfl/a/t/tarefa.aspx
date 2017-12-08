@@ -1,0 +1,15 @@
+﻿<%@ Page Title="Tarefa" Language="C#" Inherits="Benner.Tecnologia.Wes.Components.WebApp.WesPage" %>
+   
+<%@ Register Assembly="Benner.Tecnologia.Wes.Components.WebApp" Namespace="Benner.Tecnologia.Wes.Components.WebApp" TagPrefix="wes" %>
+<%@ Register Assembly="Benner.Tecnologia.Wes.Components" Namespace="Benner.Tecnologia.Wes.Components" TagPrefix="wes" %>
+     
+      <asp:Content ID="Content1" ContentPlaceHolderID="Main" Runat="Server">
+    <div class="row">
+        <wes:AjaxForm runat="server" ID="WFL_TASKS_TASK" Title="Tarefa" Subtitle="" PortletCssClass="" PortletLayout="Default" BootstrapCols="12" FontIcon="" ShowTitle="true" ProviderWidgetUniqueId="" ChromeState="Normal" CanDelete="True" CanUpdate="True" CanInsert="True" SystemInstanceName="WORKFLOW" EntityViewName="Z_WFTAREFAS.INBOX.FORM" IncludeRecordInRecentItems="True" UserDefinedLinkVisible="True" UserDefinedCommandsVisible="True" PageWidgetHandle="124" Level="15" Order="10"  />
+        <wes:SimpleGrid runat="server" ID="WFL_TASKS_TASK_PARTICIPANTS" Title="Participantes" Subtitle="" PortletCssClass="" PortletLayout="Default" BootstrapCols="12" FontIcon="" ShowTitle="true" ProviderWidgetUniqueId="WFL_TASKS_TASK" ChromeState="Normal" CanDelete="False" CanUpdate="False" CanInsert="False" SystemInstanceName="WORKFLOW" EntityViewName="Z_WFTAREFAPARTICIPANTES.INBOX.GRID" UserDefinedSelectColumnVisible="False" Mode="None" UserDefinedPageSize="10" DisplayRowCommand="False" CompanyFilterMode="None" UserDefinedCriteriaWhereClause="A.TAREFA = @CAMPO(HANDLE)" FormUrl="~/wfl/a/t/participante.aspx" UserDefinedDisableRowSelection="False" PageWidgetHandle="125" Level="15" Order="20"  />
+        <wes:SimpleGrid runat="server" ID="LEMBRETES" Title="Lembretes" Subtitle="" PortletCssClass="" PortletLayout="Default" BootstrapCols="12" FontIcon="" ShowTitle="true" ProviderWidgetUniqueId="WFL_TASKS_TASK" ChromeState="Minimized" CanDelete="False" CanUpdate="False" CanInsert="False" SystemInstanceName="WORKFLOW" EntityViewName="Z_WFLEMBRETES.GRID" UserDefinedSelectColumnVisible="False" Mode="None" UserDefinedPageSize="10" DisplayRowCommand="False" CompanyFilterMode="None" UserDefinedCriteriaWhereClause="A.TAREFA = @CAMPO(HANDLE)" UserDefinedDisableRowSelection="False" PageWidgetHandle="126" Level="15" Order="30"  />
+        <wes:SimpleGrid runat="server" ID="AUDITORIA" Title="Auditoria" Subtitle="" PortletCssClass="" PortletLayout="Default" BootstrapCols="12" FontIcon="" ShowTitle="true" ProviderWidgetUniqueId="WFL_TASKS_TASK" ChromeState="Minimized" CanDelete="False" CanUpdate="False" CanInsert="False" SystemInstanceName="WORKFLOW" EntityViewName="Z_WFTAREFAAUDITORIAS.GRID" UserDefinedSelectColumnVisible="False" Mode="None" UserDefinedPageSize="10" DisplayRowCommand="False" CompanyFilterMode="None" UserDefinedCriteriaWhereClause="A.TAREFA = @CAMPO(HANDLE)" UserDefinedDisableRowSelection="False" PageWidgetHandle="127" Level="15" Order="40"  />
+        </div>
+    
+      </asp:Content>
+    

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<MenuPortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>MAIN</Id>
+  <Level>Tecnologia</Level>
+  <MenuItems>
+    <MenuItemPortable>
+      <Id>EDITORAS</Id>
+      <Order>124</Order>
+      <Type>Page</Type>
+      <Name>Editoras</Name>
+      <PageId>PAGES_EDITORAS_GRID</PageId>
+      <Active>true</Active>
+      <Level>Benner</Level>
+    </MenuItemPortable>
+    <MenuItemPortable>
+      <Id>AUTORES</Id>
+      <Order>249</Order>
+      <Type>Page</Type>
+      <Name>Autores</Name>
+      <PageId>PAGES_AUTORES_GRID</PageId>
+      <Active>true</Active>
+      <Level>Benner</Level>
+    </MenuItemPortable>
+    <MenuItemPortable>
+      <Id>GENEROS</Id>
+      <Order>499</Order>
+      <Type>Page</Type>
+      <Name>Generos</Name>
+      <PageId>PAGES_GENEROS_GRID</PageId>
+      <Active>true</Active>
+      <Level>Benner</Level>
+    </MenuItemPortable>
+  </MenuItems>
+</MenuPortable>

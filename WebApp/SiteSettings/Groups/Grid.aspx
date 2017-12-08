@@ -5,7 +5,7 @@
      
       <asp:Content ID="Content1" ContentPlaceHolderID="Main" Runat="Server">
     <div class="row">
-        <wes:SimpleGrid runat="server" ID="GRUPOS" Title="Grupos" Subtitle="" PortletCssClass="" PortletLayout="Default" BootstrapCols="12" FontIcon="" ShowTitle="true" ProviderWidgetUniqueId="" ChromeState="Normal" CanDelete="True" CanUpdate="True" CanInsert="True" EntityViewName="Z_GRUPOS.GRID" Mode="Selectable" UserDefinedSelectColumnVisible="False" UserDefinedPageSize="10" SystemFilterOnly="False" DisplayRowCommand="True" CompanyFilterMode="OnlyCompany" FormUrl="~/SiteSettings/Groups/Form.aspx" UserDefinedDisableRowSelection="False" PageWidgetHandle="5564" Level="15" Order="110"  />
+        <wes:SimpleGrid runat="server" ID="GRUPOS" Title="Grupos" Subtitle="" PortletCssClass="" PortletLayout="Default" BootstrapCols="12" FontIcon="" ShowTitle="true" ProviderWidgetUniqueId="" ChromeState="Normal" CanDelete="True" CanUpdate="True" CanInsert="True" EntityViewName="Z_GRUPOS.GRID" Mode="Selectable" UserDefinedSelectColumnVisible="False" UserDefinedPageSize="10" SystemFilterOnly="False" DisplayRowCommand="True" CompanyFilterMode="OnlyCompany" FormUrl="~/SiteSettings/Groups/Form.aspx" UserDefinedDisableRowSelection="False" PageWidgetHandle="20" Level="15" Order="110"  />
         </div>
     
       </asp:Content>

@@ -5,7 +5,7 @@
      
       <asp:Content ID="Content1" ContentPlaceHolderID="Main" Runat="Server">
     <div class="row">
-        <wes:AjaxForm runat="server" ID="FORMZ_CUBOS" Title="Cubos desktop" Subtitle="" PortletCssClass="" PortletLayout="Default" BootstrapCols="12" FontIcon="" ShowTitle="true" ProviderWidgetUniqueId="" ChromeState="Normal" CanDelete="False" CanUpdate="True" CanInsert="False" EntityViewName="Z_CUBOS.FORM" FormMode="ReadOnly" IncludeRecordInRecentItems="True" UserDefinedCommandsVisible="True" PageWidgetHandle="5492" Level="15" Order="100"  />
+        <wes:AjaxForm runat="server" ID="FORMZ_CUBOS" Title="Cubos desktop" Subtitle="" PortletCssClass="" PortletLayout="Default" BootstrapCols="12" FontIcon="" ShowTitle="true" ProviderWidgetUniqueId="" ChromeState="Normal" CanDelete="False" CanUpdate="True" CanInsert="False" EntityViewName="Z_CUBOS.FORM" FormMode="ReadOnly" IncludeRecordInRecentItems="True" UserDefinedCommandsVisible="True" PageWidgetHandle="49" Level="15" Order="100"  />
         </div>
     
       </asp:Content>

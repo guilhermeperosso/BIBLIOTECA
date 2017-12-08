@@ -5,7 +5,7 @@
      
       <asp:Content ID="Content1" ContentPlaceHolderID="Main" Runat="Server">
     <div class="row">
-        <wes:PivotTable runat="server" ID="VISUALIZACAOCUBO" Title="Visualização cubo" Subtitle="" PortletCssClass="" PortletLayout="Default" BootstrapCols="12" FontIcon="" ShowTitle="true" ProviderWidgetUniqueId="" ChromeState="Fixed" CanDelete="True" CanUpdate="True" CanInsert="True" ShowFieldsPanel="False" PivotTableHeight="550" PageWidgetHandle="5494" Level="15" Order="10"  />
+        <wes:PivotTable runat="server" ID="VISUALIZACAOCUBO" Title="Visualização cubo" Subtitle="" PortletCssClass="" PortletLayout="Default" BootstrapCols="12" FontIcon="" ShowTitle="true" ProviderWidgetUniqueId="" ChromeState="Fixed" CanDelete="True" CanUpdate="True" CanInsert="True" ShowFieldsPanel="False" PivotTableHeight="550" PageWidgetHandle="51" Level="15" Order="10"  />
         </div>
     
       </asp:Content>

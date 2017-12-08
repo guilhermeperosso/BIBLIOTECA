@@ -5,7 +5,7 @@
      
       <asp:Content ID="Content1" ContentPlaceHolderID="Main" Runat="Server">
     <div class="row">
-        <wes:AjaxForm runat="server" ID="FORMZ_GRUPOUSUARIOEMPRESAS" Title="Empresas" Subtitle="" PortletCssClass="" PortletLayout="Default" BootstrapCols="12" FontIcon="" ShowTitle="true" ProviderWidgetUniqueId="" ChromeState="Normal" CanDelete="True" CanUpdate="True" CanInsert="True" EntityViewName="Z_GRUPOUSUARIOEMPRESAS.FORM" FormMode="ReadOnly" IncludeRecordInRecentItems="True" UserDefinedCommandsVisible="True" PageWidgetHandle="5713" Level="15" Order="100"  />
+        <wes:AjaxForm runat="server" ID="FORMZ_GRUPOUSUARIOEMPRESAS" Title="Empresas" Subtitle="" PortletCssClass="" PortletLayout="Default" BootstrapCols="12" FontIcon="" ShowTitle="true" ProviderWidgetUniqueId="" ChromeState="Normal" CanDelete="True" CanUpdate="True" CanInsert="True" EntityViewName="Z_GRUPOUSUARIOEMPRESAS.FORM" FormMode="ReadOnly" IncludeRecordInRecentItems="True" UserDefinedCommandsVisible="True" PageWidgetHandle="52" Level="15" Order="100"  />
         </div>
     
       </asp:Content>
