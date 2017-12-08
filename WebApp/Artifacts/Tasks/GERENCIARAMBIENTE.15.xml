@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<TaskPortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>GERENCIARAMBIENTE</Id>
+  <Title>Gerenciar Ambiente</Title>
+  <Level>Tecnologia</Level>
+  <Reports />
+  <Pages>
+    <string>CONNECTIONSETTING</string>
+    <string>WEBAPPADMINISTRADOR</string>
+    <string>WEBAPPENVIRONMENTINFO</string>
+    <string>WEBAPPINSTRUMENTATION</string>
+    <string>WEBAPPVERSIONINFO</string>
+  </Pages>
+  <Components />
+  <Operations />
+  <Process />
+  <Tasks />
+</TaskPortable>

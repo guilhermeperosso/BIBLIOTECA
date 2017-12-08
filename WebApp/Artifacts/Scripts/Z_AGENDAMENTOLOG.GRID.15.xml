@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<ScriptPortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ViewName>Z_AGENDAMENTOLOG.GRID</ViewName>
+  <EntityName>Z_AGENDAMENTOLOG</EntityName>
+  <Level>Tecnologia</Level>
+  <Scripts>
+    <ScriptItemPortable>
+      <FunctionName>InitializeRow</FunctionName>
+      <LanguageName>IronPython</LanguageName>
+      <SourceCode>def InitializeRow(entity, row):
+    from System import String
+    row.GetCellByName("STATUS").Tooltip = entity["STATUS"].GetString()
+    row.GetCellByName("STATUS").Text = ""
+    row.GetCellByName("STATUS").Align = "center"
+    if (not entity["FIM"].IsNull):
+        row.GetCellByName("CUSTOM_DURACAO").Text = entity["FIM"].Value.Subtract(entity["INICIO"].Value).ToString("hh':'mm':'ss")
+    if (entity["STATUS"].GetInt32() == 1):
+        row.GetCellByName("STATUS").TextColor = "#3598dc"
+        row.GetCellByName("STATUS").FontIcon = "fa fa-play"
+    if (entity["STATUS"].GetInt32() == 2):
+        row.GetCellByName("STATUS").TextColor = "#26a69a"
+        row.GetCellByName("STATUS").FontIcon = "fa fa-check-circle"
+    if (entity["STATUS"].GetInt32() == 3):
+        row.GetCellByName("STATUS").TextColor = "#cb5a5e"
+        row.GetCellByName("STATUS").FontIcon = "fa fa-times-circle"
+</SourceCode>
+    </ScriptItemPortable>
+  </Scripts>
+</ScriptPortable>

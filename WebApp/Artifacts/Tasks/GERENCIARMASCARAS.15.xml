@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<TaskPortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>GERENCIARMASCARAS</Id>
+  <Title>Gerenciar Máscaras</Title>
+  <Level>Tecnologia</Level>
+  <Reports />
+  <Pages>
+    <string>MASKPAGEFORM</string>
+    <string>MASKPAGEGRID</string>
+  </Pages>
+  <Components />
+  <Operations>
+    <string>Z_MASCARAGRUPOS|DELETE</string>
+    <string>Z_MASCARAGRUPOS|INSERT</string>
+    <string>Z_MASCARAGRUPOS|UPDATE</string>
+    <string>Z_MASCARAGRUPOS|VIEW</string>
+    <string>Z_MASCARAS|DELETE</string>
+    <string>Z_MASCARAS|INSERT</string>
+    <string>Z_MASCARAS|UPDATE</string>
+    <string>Z_MASCARAS|VIEW</string>
+  </Operations>
+  <Process />
+  <Tasks />
+</TaskPortable>

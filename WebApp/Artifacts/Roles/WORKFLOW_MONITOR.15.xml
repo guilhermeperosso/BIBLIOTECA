@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<RolePortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>WORKFLOW_MONITOR</Id>
+  <Title>Monitoramento do Workflow</Title>
+  <Level>Tecnologia</Level>
+  <Tasks>
+    <string>WORKFLOW_MONITOR</string>
+  </Tasks>
+  <Roles>
+    <string>WORKFLOW_PARTICIPANTE</string>
+  </Roles>
+</RolePortable>

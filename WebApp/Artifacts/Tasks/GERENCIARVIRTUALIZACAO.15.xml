@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<TaskPortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>GERENCIARVIRTUALIZACAO</Id>
+  <Title>Gerenciar Virtualização</Title>
+  <Level>Tecnologia</Level>
+  <Reports />
+  <Pages>
+    <string>VIRTUALIZATIONPAGEFORM</string>
+    <string>VIRTUALIZATIONPAGEGRID</string>
+  </Pages>
+  <Components />
+  <Operations>
+    <string>Z_VIRTUALIZACAODB|DELETE</string>
+    <string>Z_VIRTUALIZACAODB|INSERT</string>
+    <string>Z_VIRTUALIZACAODB|UPDATE</string>
+    <string>Z_VIRTUALIZACAODB|VIEW</string>
+    <string>Z_VIRTUALIZACAODBPROVEDORES|DELETE</string>
+    <string>Z_VIRTUALIZACAODBPROVEDORES|INSERT</string>
+    <string>Z_VIRTUALIZACAODBPROVEDORES|UPDATE</string>
+    <string>Z_VIRTUALIZACAODBPROVEDORES|VIEW</string>
+  </Operations>
+  <Process />
+  <Tasks />
+</TaskPortable>

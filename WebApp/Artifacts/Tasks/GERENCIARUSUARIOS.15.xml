@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<TaskPortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>GERENCIARUSUARIOS</Id>
+  <Title>Gerenciar Usuários</Title>
+  <Level>Tecnologia</Level>
+  <Reports />
+  <Pages>
+    <string>CHANGEUSERPASSWORD</string>
+    <string>COMPANYSELECTORPAGE</string>
+    <string>FORGOTPASSWORDEMAILCONFIG</string>
+    <string>GROUPFORM</string>
+    <string>GROUPGRID</string>
+    <string>GROUPUSERSFORM</string>
+    <string>GROUPUSERSGRID</string>
+  </Pages>
+  <Components />
+  <Operations>
+    <string>Z_GRUPOGRUPOS|DELETE</string>
+    <string>Z_GRUPOGRUPOS|INSERT</string>
+    <string>Z_GRUPOGRUPOS|UPDATE</string>
+    <string>Z_GRUPOGRUPOS|VIEW</string>
+    <string>Z_GRUPOS|DELETE</string>
+    <string>Z_GRUPOS|INSERT</string>
+    <string>Z_GRUPOS|UPDATE</string>
+    <string>Z_GRUPOS|VIEW</string>
+    <string>Z_GRUPOUSUARIOGRUPOS|DELETE</string>
+    <string>Z_GRUPOUSUARIOGRUPOS|INSERT</string>
+    <string>Z_GRUPOUSUARIOGRUPOS|UPDATE</string>
+    <string>Z_GRUPOUSUARIOGRUPOS|VIEW</string>
+    <string>Z_GRUPOUSUARIOS|DELETE</string>
+    <string>Z_GRUPOUSUARIOS|ENVIARSENHATEMPORARIAPOREMAIL</string>
+    <string>Z_GRUPOUSUARIOS|INSERT</string>
+    <string>Z_GRUPOUSUARIOS|UPDATE</string>
+    <string>Z_GRUPOUSUARIOS|VIEW</string>
+    <string>Z_VIRTUAL_COPIAUSUARIO|INSERT</string>
+    <string>Z_VIRTUAL_COPIAUSUARIO|VIEW</string>
+  </Operations>
+  <Process />
+  <Tasks />
+</TaskPortable>

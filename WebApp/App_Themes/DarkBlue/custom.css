@@ -1,0 +1,49 @@
+﻿@import url("../../content/assets/layouts/layout/css/themes/darkblue.min.css");
+
+.page-header.navbar .page-logo .logo{
+    background-image: url(../../content/img/logo-benner-branca.png);
+}
+
+.menu-do-desenvolvedor {
+    background-color: #3f4f62 !important;
+}
+
+.usuario {
+    background-color: #36c6d3 !important;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+}
+
+.usuario:hover {
+    background-color: #36c6d3 !important;
+    color: #fff;
+}
+/* === Pesquisa ===*/
+#searcher > a:hover {
+    background-color: #3f4f62;
+}
+
+    #searcher > a > i {
+        color: #79869a;
+        font-size: 17px;
+    }
+
+    #searcher:hover > a > i {
+        color: #a4aebb;
+    }
+/* === Pesquisa ===*/
+/* === Help F1 ===*/
+#helpDocumentation > a:hover {
+    background-color: #3f4f62;
+}
+
+    #helpDocumentation > a > i {
+        color: #79869a;
+        font-size: 17px;
+    }
+
+    #helpDocumentation:hover > a > i {
+        color: #a4aebb;
+    }
+/* === Help F1 ===*/

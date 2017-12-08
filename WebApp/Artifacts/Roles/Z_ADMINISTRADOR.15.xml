@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<RolePortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>Z_ADMINISTRADOR</Id>
+  <Title>Administrador</Title>
+  <Level>Tecnologia</Level>
+  <Tasks>
+    <string>DEFINIRPAPEISETAREFAS</string>
+    <string>DESENVOLVER</string>
+    <string>GERENCIARAGENDAMENTOS</string>
+    <string>GERENCIARAMBIENTE</string>
+    <string>GERENCIARAUTORIZACAO</string>
+    <string>GERENCIARCONTADORES</string>
+    <string>GERENCIAREMPRESASEFILIAIS</string>
+    <string>GERENCIARFAVORITOS</string>
+    <string>GERENCIARLOGEAUDITORIA</string>
+    <string>GERENCIARMASCARAS</string>
+    <string>GERENCIARPERMISSOES</string>
+    <string>GERENCIARRELATORIOS</string>
+    <string>GERENCIARTRADUCOES</string>
+    <string>GERENCIARUSUARIOS</string>
+    <string>GERENCIARVIRTUALIZACAO</string>
+    <string>INSTALARARTEFATOS</string>
+    <string>RECUPERARSENHAS</string>
+    <string>VISUALIZAR_GALERIA_CUBOS</string>
+  </Tasks>
+  <Roles />
+</RolePortable>
