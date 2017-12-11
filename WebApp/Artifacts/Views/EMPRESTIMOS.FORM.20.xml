@@ -43,7 +43,7 @@
     <FieldDefinitions>
       <FormFieldDefinition key="DATAINICIO" inherited="true">
         <visible xsi:nil="true" />
-        <DataAccessLevel>Read</DataAccessLevel>
+        <DataAccessLevel>Insert</DataAccessLevel>
         <Required xsi:nil="true" />
         <HasScriptEvent xsi:nil="true" />
         <renderTitle>true</renderTitle>

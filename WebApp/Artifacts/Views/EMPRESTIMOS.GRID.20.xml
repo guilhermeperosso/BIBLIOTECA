@@ -73,9 +73,9 @@
       </Command>
       <Command title="" key="Edit" inherited="true">
         <visible xsi:nil="true" />
-        <showModal xsi:nil="true" />
+        <showModal>false</showModal>
         <modalSize xsi:nil="true" />
-        <showInAllLevelsStructuredTable xsi:nil="true" />
+        <showInAllLevelsStructuredTable>false</showInAllLevelsStructuredTable>
         <context xsi:nil="true" />
       </Command>
       <Command title="" key="Save" inherited="true">
@@ -100,10 +100,10 @@
         <context xsi:nil="true" />
       </Command>
       <Command title="" key="Delete" inherited="true">
-        <visible xsi:nil="true" />
-        <showModal xsi:nil="true" />
+        <visible>false</visible>
+        <showModal>false</showModal>
         <modalSize xsi:nil="true" />
-        <showInAllLevelsStructuredTable xsi:nil="true" />
+        <showInAllLevelsStructuredTable>false</showInAllLevelsStructuredTable>
         <context xsi:nil="true" />
       </Command>
       <Command title="" key="View" inherited="true">
@@ -112,6 +112,14 @@
         <modalSize xsi:nil="true" />
         <showInAllLevelsStructuredTable xsi:nil="true" />
         <context xsi:nil="true" />
+      </Command>
+      <Command title="Devolver Livro" image="fa fa-mail-reply-all" color="blue" key="CMD_DEVOLUCAO">
+        <visible>true</visible>
+        <showModal>false</showModal>
+        <modalSize xsi:nil="true" />
+        <showInAllLevelsStructuredTable>false</showInAllLevelsStructuredTable>
+        <context>Record</context>
+        <ProcessDefinition xsi:type="Function" functionName="Devolver" />
       </Command>
     </Commands>
   </GridDefinition>
