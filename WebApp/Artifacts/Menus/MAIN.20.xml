@@ -4,6 +4,33 @@
   <Level>Tecnologia</Level>
   <MenuItems>
     <MenuItemPortable>
+      <Id>CLIENTES</Id>
+      <Order>2</Order>
+      <Type>Page</Type>
+      <Name>Clientes</Name>
+      <PageId>PAGES_CLIENTES_GRID</PageId>
+      <Active>true</Active>
+      <Level>Benner</Level>
+    </MenuItemPortable>
+    <MenuItemPortable>
+      <Id>EMPRESTIMOS</Id>
+      <Order>6</Order>
+      <Type>Page</Type>
+      <Name>Emprestimos</Name>
+      <PageId>PAGES_EMPRESTIMOS_GRID</PageId>
+      <Active>true</Active>
+      <Level>Benner</Level>
+    </MenuItemPortable>
+    <MenuItemPortable>
+      <Id>LIVROS</Id>
+      <Order>61</Order>
+      <Type>Page</Type>
+      <Name>Livros</Name>
+      <PageId>PAGES_LIVROS_GRID</PageId>
+      <Active>true</Active>
+      <Level>Benner</Level>
+    </MenuItemPortable>
+    <MenuItemPortable>
       <Id>EDITORAS</Id>
       <Order>124</Order>
       <Type>Page</Type>
