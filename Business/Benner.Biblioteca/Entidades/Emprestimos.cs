@@ -20,42 +20,55 @@ namespace Benner.Biblioteca.Entidades
     /// </summary>
     public partial class Emprestimos
     {
-        protected override void Saving()
+        private readonly ILivrosDao _livroDao = LivrosDao.CreateInstance();
+        private readonly IEmprestimosDao _emprestimoDao = EmprestimosDao.CreateInstance();
+
+        protected override void Validating()
         {
-            var livroDao = LivrosDao.CreateInstance();
-            var livro = livroDao.Get(LivroHandle);
-            if (livro.Emprestado == true)
+            var livro = _livroDao.Get(LivroHandle);
+            if (DataDevolucao == null)
             {
-                throw new BusinessException("Este livro já está emprestado.");
+                var dias = DataFinal.Value <= DataInicio.Value;
+                if (livro.Emprestado == true && dias)
+                {
+                    throw new BusinessException("Não foi possível efetuar o empréstimo.");
+                }
+                else
+                {
+                    livro.Emprestado = true;
+                    _livroDao.Save(livro);
+                }
             }
             else
             {
-                livro.Emprestado = true;
-                livroDao.Save(livro);
+                livro.Emprestado = false;
             }
-            base.Saving();
+            base.Validating();
+        }
+
+        protected override void Editing()
+        {
+            var livro = _livroDao.Get(LivroHandle);
+            livro.Emprestado = livro.Emprestado;
+            _livroDao.Save(livro);
+            base.Editing();
         }
 
         public void Devolver(BusinessArgs args)
         {
-            var emprestimoDao = EmprestimosDao.CreateInstance();
-            var emprestimo = emprestimoDao.Get(Handle);
-            var livroDao = LivrosDao.CreateInstance();
-            var livro = livroDao.Get(LivroHandle);
-            if (livro.Emprestado == true)
+            var emprestimo = _emprestimoDao.Get(Handle);
+            var livro = _livroDao.Get(LivroHandle);
+            if (DataDevolucao == null)
             {
-                emprestimo.DataDevolucao = DateTime.Now.Date;
-                livro.Emprestado = false;
-                livroDao.Save(livro);
-                emprestimoDao.Save(emprestimo);
+                    livro.Emprestado = false;
+                    _livroDao.Save(livro);
+                    emprestimo.DataDevolucao = DateTime.Now.Date;
+                    _emprestimoDao.Save(emprestimo);
             }
             else
             {
                 throw new BusinessException("Este livro já foi devolvido.");
             }
-
-
-           
         }
     }
 }

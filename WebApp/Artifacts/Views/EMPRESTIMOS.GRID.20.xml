@@ -72,7 +72,7 @@
         <context xsi:nil="true" />
       </Command>
       <Command title="" key="Edit" inherited="true">
-        <visible xsi:nil="true" />
+        <visible>false</visible>
         <showModal>false</showModal>
         <modalSize xsi:nil="true" />
         <showInAllLevelsStructuredTable>false</showInAllLevelsStructuredTable>
@@ -100,7 +100,7 @@
         <context xsi:nil="true" />
       </Command>
       <Command title="" key="Delete" inherited="true">
-        <visible>false</visible>
+        <visible xsi:nil="true" />
         <showModal>false</showModal>
         <modalSize xsi:nil="true" />
         <showInAllLevelsStructuredTable>false</showInAllLevelsStructuredTable>
@@ -113,7 +113,7 @@
         <showInAllLevelsStructuredTable xsi:nil="true" />
         <context xsi:nil="true" />
       </Command>
-      <Command title="Devolver Livro" image="fa fa-mail-reply-all" color="blue" key="CMD_DEVOLUCAO">
+      <Command title="Devolver Livro" image="fa fa-mail-reply-all" color="black" key="CMD_DEVOLUCAO">
         <visible>true</visible>
         <showModal>false</showModal>
         <modalSize xsi:nil="true" />

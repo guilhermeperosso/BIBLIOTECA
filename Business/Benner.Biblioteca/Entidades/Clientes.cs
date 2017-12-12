@@ -20,5 +20,8 @@ namespace Benner.Biblioteca.Entidades
     /// </summary>
     public partial class Clientes
     {
+        private readonly IClientesDao _clientesDao = ClientesDao.CreateInstance();
+
+
     }
 }

@@ -209,7 +209,7 @@ namespace Benner.Biblioteca.Entidades
         
         /// <summary>
         /// Livros (LIVROS.)
-        /// Opcional = N, Invisível = False, Pesquisar = LIVROS
+        /// Opcional = S, Invisível = False, Pesquisar = LIVROS
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
         public Benner.Tecnologia.Common.EntityAssociation<Benner.Biblioteca.Entidades.Livros> Livros

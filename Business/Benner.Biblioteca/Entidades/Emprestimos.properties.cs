@@ -31,7 +31,7 @@ namespace Benner.Biblioteca.Entidades
     {
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
-        Benner.Tecnologia.Common.IEntityBase ClienteInstance
+        Benner.Biblioteca.Entidades.IClientes ClienteInstance
         {
             get;
             set;
@@ -46,7 +46,7 @@ namespace Benner.Biblioteca.Entidades
         
         /// <summary>
         /// Data de Devolução (DATADEVOLUCAO.)
-        /// Opcional = N, Invisível = False, Formato Data = Dia, Mês, Ano - Formato Hora = Sem hora
+        /// Opcional = S, Invisível = False, Formato Data = Dia, Mês, Ano - Formato Hora = Sem hora
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
         System.Nullable<System.DateTime> DataDevolucao
@@ -56,7 +56,7 @@ namespace Benner.Biblioteca.Entidades
         }
         
         /// <summary>
-        /// Data final (DATAFIM.)
+        /// Data Final (DATAFIM.)
         /// Opcional = N, Invisível = False, Formato Data = Dia, Mês, Ano - Formato Hora = Sem hora
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
@@ -67,11 +67,11 @@ namespace Benner.Biblioteca.Entidades
         }
         
         /// <summary>
-        /// Datainicio (DATAINICIO.)
+        /// Data de Início (DATAINICIO.)
         /// Opcional = N, Invisível = False, Formato Data = Dia, Mês, Ano - Formato Hora = Sem hora
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
-        System.Nullable<System.DateTime> Datainicio
+        System.Nullable<System.DateTime> DataInicio
         {
             get;
             set;
@@ -127,13 +127,13 @@ namespace Benner.Biblioteca.Entidades
 			public const string Cliente = "CLIENTE";
 			public const string DataDevolucao = "DATADEVOLUCAO";
 			public const string DataFinal = "DATAFIM";
-			public const string Datainicio = "DATAINICIO";
+			public const string DataInicio = "DATAINICIO";
 			public const string Livro = "LIVRO";
 		}
 
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
-        public Benner.Tecnologia.Common.IEntityBase ClienteInstance
+        public Benner.Biblioteca.Entidades.IClientes ClienteInstance
         {
             get
             {
@@ -150,7 +150,7 @@ namespace Benner.Biblioteca.Entidades
 					Cliente = null;
 					return;
                 }
-                Cliente.Instance = (EntityBase) value;
+                Cliente.Instance = (Benner.Biblioteca.Entidades.Clientes) value;
             }
         }
         
@@ -172,11 +172,11 @@ namespace Benner.Biblioteca.Entidades
         /// Opcional = N, Invisível = False, Pesquisar = CLIENTES
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
-        public Benner.Tecnologia.Common.EntityAssociation Cliente
+        public Benner.Tecnologia.Common.EntityAssociation<Benner.Biblioteca.Entidades.Clientes> Cliente
         {
             get
             {
-                return Fields["CLIENTE"] as Benner.Tecnologia.Common.EntityAssociation;
+                return (Fields["CLIENTE"] as EntityAssociation).Wrap<Benner.Biblioteca.Entidades.Clientes>(Benner.Biblioteca.Entidades.Clientes.Get);
             }
             set
             {
@@ -186,7 +186,7 @@ namespace Benner.Biblioteca.Entidades
                 }
                 else
                 {
-                    if (value.IsLoaded)
+                    if (value.Association.IsLoaded)
                     {
                         this.Cliente.Instance = value.Instance;
                     }
@@ -200,7 +200,7 @@ namespace Benner.Biblioteca.Entidades
         
         /// <summary>
         /// Data de Devolução (DATADEVOLUCAO.)
-        /// Opcional = N, Invisível = False, Formato Data = Dia, Mês, Ano - Formato Hora = Sem hora
+        /// Opcional = S, Invisível = False, Formato Data = Dia, Mês, Ano - Formato Hora = Sem hora
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
         public System.Nullable<System.DateTime> DataDevolucao
@@ -216,7 +216,7 @@ namespace Benner.Biblioteca.Entidades
         }
         
         /// <summary>
-        /// Data final (DATAFIM.)
+        /// Data Final (DATAFIM.)
         /// Opcional = N, Invisível = False, Formato Data = Dia, Mês, Ano - Formato Hora = Sem hora
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
@@ -233,11 +233,11 @@ namespace Benner.Biblioteca.Entidades
         }
         
         /// <summary>
-        /// Datainicio (DATAINICIO.)
+        /// Data de Início (DATAINICIO.)
         /// Opcional = N, Invisível = False, Formato Data = Dia, Mês, Ano - Formato Hora = Sem hora
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
-        public System.Nullable<System.DateTime> Datainicio
+        public System.Nullable<System.DateTime> DataInicio
         {
             get
             {

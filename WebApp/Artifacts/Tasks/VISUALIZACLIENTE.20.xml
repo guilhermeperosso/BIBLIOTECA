@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<TaskPortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>VISUALIZACLIENTE</Id>
+  <Title>Visualiza Cliente</Title>
+  <Level>Benner</Level>
+  <Reports />
+  <Pages />
+  <Components />
+  <Operations>
+    <string>CLIENTES|VIEW</string>
+  </Operations>
+  <Process />
+  <Tasks />
+</TaskPortable>

@@ -53,7 +53,7 @@
         <DataAccessLevel xsi:nil="true" />
         <Required xsi:nil="true" />
         <HasScriptEvent xsi:nil="true" />
-        <renderTitle xsi:nil="true" />
+        <renderTitle>true</renderTitle>
       </FormFieldDefinition>
       <FormFieldDefinition key="DATADEVOLUCAO" inherited="true">
         <visible>false</visible>
