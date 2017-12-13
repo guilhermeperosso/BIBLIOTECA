@@ -1,15 +1,17 @@
 <?xml version="1.0"?>
 <TaskPortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>VISUALIZACLIENTE</Id>
-  <Title>Visualiza Cliente</Title>
+  <Id>VISUALIZARLIVROS</Id>
+  <Title>Visualizar Livros</Title>
   <Level>Benner</Level>
   <Reports />
   <Pages>
-    <string>PAGES_PERFIL</string>
+    <string>PAGES_HOME</string>
+    <string>PAGES_LIVROS_GRID</string>
   </Pages>
   <Components />
   <Operations>
-    <string>CLIENTES|VIEW</string>
+    <string>EMPRESTIMOS|VIEW</string>
+    <string>LIVROS|VIEW</string>
   </Operations>
   <Process />
   <Tasks />

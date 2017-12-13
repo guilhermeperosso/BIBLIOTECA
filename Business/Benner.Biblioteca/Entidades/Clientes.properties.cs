@@ -41,15 +41,12 @@ namespace Benner.Biblioteca.Entidades
             set;
         }
         
+        /// <summary>
+        /// Livros (LIVROS.)
+        /// Opcional = N, Invisível = False
+        /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
-        Benner.Biblioteca.Entidades.ILivros LivrosInstance
-        {
-            get;
-            set;
-        }
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
-        Handle LivrosHandle
+        ClientesLivrosListaItens Livros
         {
             get;
             set;
@@ -94,6 +91,30 @@ namespace Benner.Biblioteca.Entidades
         public static ClientesDao CreateInstance()
         {
             return CreateInstance<ClientesDao>();
+        }
+    }
+    
+    /// <summary>
+    /// Esta classe contém os itens do campo LIVROS.
+    /// </summary>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
+    public class ClientesLivrosListaItens : ListItems<ClientesLivrosListaItens>
+    {
+        
+		public static implicit operator ClientesLivrosListaItens(int index)
+		{
+			return GetByIndex(index);
+		}
+
+		public static implicit operator int(ClientesLivrosListaItens item)
+		{
+			return item.Index;
+		}
+        
+        static ClientesLivrosListaItens()
+        {
+
+
         }
     }
     
@@ -172,69 +193,26 @@ namespace Benner.Biblioteca.Entidades
             }
         }
         
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
-        public Benner.Biblioteca.Entidades.ILivros LivrosInstance
-        {
-            get
-            {
-                if (Livros.Handle == null)
-                {
-					return null;
-                }
-                return Livros.Instance;
-            }
-            set
-            {
-                if (value == null)
-                {
-					Livros = null;
-					return;
-                }
-                Livros.Instance = (Benner.Biblioteca.Entidades.Livros) value;
-            }
-        }
-        
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
-        public Handle LivrosHandle
-        {
-            get
-            {
-                return Livros.Handle;
-            }
-            set
-            {
-                Livros.Handle = value;
-            }
-        }
-        
         /// <summary>
         /// Livros (LIVROS.)
-        /// Opcional = S, Invisível = False, Pesquisar = LIVROS
+        /// Opcional = N, Invisível = False
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
-        public Benner.Tecnologia.Common.EntityAssociation<Benner.Biblioteca.Entidades.Livros> Livros
+        public ClientesLivrosListaItens Livros
         {
             get
             {
-                return (Fields["LIVROS"] as EntityAssociation).Wrap<Benner.Biblioteca.Entidades.Livros>(Benner.Biblioteca.Entidades.Livros.Get);
+                ListItem listItem = Fields["LIVROS"] as ListItem;
+				if (listItem != null)
+					return new ClientesLivrosListaItens { Index = listItem.Value, Description = listItem.Text };
+				return null;
             }
             set
             {
-                if (value == null)
-                {
-                    this.Livros.Handle = null;
-                }
-                else
-                {
-                    if (value.Association.IsLoaded)
-                    {
-                        this.Livros.Instance = value.Instance;
-                    }
-                    else
-                    {
-                        this.Livros.Handle = value.Handle;
-                    }
-                }
+                if (value != null)
+					Fields["LIVROS"] = new ListItem(value.Index, value.Description);
+				else
+					Fields["LIVROS"] = null;
             }
         }
         

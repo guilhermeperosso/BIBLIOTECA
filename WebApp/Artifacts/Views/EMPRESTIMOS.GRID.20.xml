@@ -46,11 +46,11 @@
       </GridFieldDefinition>
       <GridFieldDefinition key="DATAFIM">
         <visible>true</visible>
-        <DataAccessLevel xsi:nil="true" />
+        <DataAccessLevel>Edit</DataAccessLevel>
         <Required xsi:nil="true" />
         <HasScriptEvent xsi:nil="true" />
-        <footerBehavior xsi:nil="true" />
-        <Width xsi:nil="true" />
+        <footerBehavior>None</footerBehavior>
+        <Width />
       </GridFieldDefinition>
       <GridFieldDefinition key="DATADEVOLUCAO">
         <visible>true</visible>
@@ -113,7 +113,7 @@
         <showInAllLevelsStructuredTable xsi:nil="true" />
         <context xsi:nil="true" />
       </Command>
-      <Command title="Devolver Livro" image="fa fa-mail-reply-all" color="black" key="CMD_DEVOLUCAO">
+      <Command title="Devolver Livro" image="fa fa-mail-reply-all" color="dark" key="CMD_DEVOLUCAO">
         <visible>true</visible>
         <showModal>false</showModal>
         <modalSize xsi:nil="true" />

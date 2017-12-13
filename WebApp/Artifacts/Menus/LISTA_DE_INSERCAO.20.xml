@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<MenuPortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>LISTA_DE_INSERCAO</Id>
+  <Level>Tecnologia</Level>
+  <MenuItems>
+    <MenuItemPortable>
+      <Id>NOVOLIVRO</Id>
+      <ParentId>NOVOLIVRO</ParentId>
+      <Order>10</Order>
+      <Type>Command</Type>
+      <Name>Novo Livro</Name>
+      <CommandView>LIVROS.FORM</CommandView>
+      <CommandName>New</CommandName>
+      <PageId>PAGES_LIVROS_FORM</PageId>
+      <Active>true</Active>
+      <Level>Benner</Level>
+      <CssParaIcone>fa fa-book</CssParaIcone>
+    </MenuItemPortable>
+    <MenuItemPortable>
+      <Id>NOVOSLIVROS</Id>
+      <Order>10</Order>
+      <Type>Command</Type>
+      <Name>Novo Livro</Name>
+      <CommandView>LIVROS.FORM</CommandView>
+      <CommandName>New</CommandName>
+      <PageId />
+      <Active>true</Active>
+      <Level>Benner</Level>
+      <CssParaIcone>fa fa-book</CssParaIcone>
+    </MenuItemPortable>
+  </MenuItems>
+</MenuPortable>

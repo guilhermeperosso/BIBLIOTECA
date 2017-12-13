@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<TaskPortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Id>GERENCIA</Id>
+  <Title>Gerenciar</Title>
+  <Level>Benner</Level>
+  <Reports />
+  <Pages>
+    <string>PAGES_AUTORES_FORM</string>
+    <string>PAGES_AUTORES_GRID</string>
+    <string>PAGES_CLIENTES_FORM</string>
+    <string>PAGES_CLIENTES_GRID</string>
+    <string>PAGES_EDITORAS_FORM</string>
+    <string>PAGES_EDITORAS_GRID</string>
+    <string>PAGES_EMPRESTIMOS_FORM</string>
+    <string>PAGES_EMPRESTIMOS_GRID</string>
+    <string>PAGES_GENEROS_FORM</string>
+    <string>PAGES_GENEROS_GRID</string>
+    <string>PAGES_HOME</string>
+    <string>PAGES_LIVROS_FORM</string>
+    <string>PAGES_LIVROS_GRID</string>
+  </Pages>
+  <Components />
+  <Operations>
+    <string>AUTORES|INSERT</string>
+    <string>AUTORES|UPDATE</string>
+    <string>AUTORES|VIEW</string>
+    <string>CLIENTES|INSERT</string>
+    <string>CLIENTES|UPDATE</string>
+    <string>CLIENTES|VIEW</string>
+    <string>EDITORAS|INSERT</string>
+    <string>EDITORAS|UPDATE</string>
+    <string>EDITORAS|VIEW</string>
+    <string>EMPRESTIMOS|DEVOLVER</string>
+    <string>EMPRESTIMOS|INSERT</string>
+    <string>EMPRESTIMOS|UPDATE</string>
+    <string>EMPRESTIMOS|VIEW</string>
+    <string>GENEROS|INSERT</string>
+    <string>GENEROS|UPDATE</string>
+    <string>GENEROS|VIEW</string>
+    <string>LIVROS|INSERT</string>
+    <string>LIVROS|UPDATE</string>
+    <string>LIVROS|VIEW</string>
+  </Operations>
+  <Process />
+  <Tasks />
+</TaskPortable>

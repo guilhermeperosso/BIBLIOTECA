@@ -4,20 +4,20 @@
   <Level>Tecnologia</Level>
   <MenuItems>
     <MenuItemPortable>
-      <Id>CLIENTES</Id>
+      <Id>PAGES_PERFIL</Id>
       <Order>2</Order>
       <Type>Page</Type>
-      <Name>Clientes</Name>
-      <PageId>PAGES_CLIENTES_GRID</PageId>
+      <Name>Meu Perfil</Name>
+      <PageId>PAGES_PERFIL</PageId>
       <Active>true</Active>
       <Level>Benner</Level>
     </MenuItemPortable>
     <MenuItemPortable>
-      <Id>EMPRESTIMOS</Id>
-      <Order>6</Order>
+      <Id>CLIENTES</Id>
+      <Order>3</Order>
       <Type>Page</Type>
-      <Name>Emprestimos</Name>
-      <PageId>PAGES_EMPRESTIMOS_GRID</PageId>
+      <Name>Clientes</Name>
+      <PageId>PAGES_CLIENTES_GRID</PageId>
       <Active>true</Active>
       <Level>Benner</Level>
     </MenuItemPortable>
@@ -54,6 +54,15 @@
       <Type>Page</Type>
       <Name>Generos</Name>
       <PageId>PAGES_GENEROS_GRID</PageId>
+      <Active>true</Active>
+      <Level>Benner</Level>
+    </MenuItemPortable>
+    <MenuItemPortable>
+      <Id>EMPRESTIMOS</Id>
+      <Order>500</Order>
+      <Type>Page</Type>
+      <Name>Empréstimos</Name>
+      <PageId>PAGES_EMPRESTIMOS_GRID</PageId>
       <Active>true</Active>
       <Level>Benner</Level>
     </MenuItemPortable>

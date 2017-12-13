@@ -22,9 +22,12 @@ namespace Benner.Biblioteca.Entidades
     {
         private readonly ILivrosDao _livroDao = LivrosDao.CreateInstance();
         private readonly IEmprestimosDao _emprestimoDao = EmprestimosDao.CreateInstance();
+        private readonly IClientesDao _clienteDao = ClientesDao.CreateInstance();
+
 
         protected override void Validating()
         {
+            var cliente = _clienteDao.Get(ClienteHandle);
             var livro = _livroDao.Get(LivroHandle);
             if (DataDevolucao == null)
             {
