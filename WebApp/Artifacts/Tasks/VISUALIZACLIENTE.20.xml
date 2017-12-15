@@ -4,9 +4,7 @@
   <Title>Visualiza Cliente</Title>
   <Level>Benner</Level>
   <Reports />
-  <Pages>
-    <string>PAGES_PERFIL</string>
-  </Pages>
+  <Pages />
   <Components />
   <Operations>
     <string>CLIENTES|VIEW</string>

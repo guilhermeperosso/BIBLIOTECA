@@ -24,7 +24,7 @@
       <WidgetTypeId>SimpleGrid</WidgetTypeId>
       <BootstrapCols>12</BootstrapCols>
       <XmlAttributes><![CDATA[<SimpleGridAttributes>
-  <CanDelete>true</CanDelete>
+  <CanDelete>false</CanDelete>
   <CanUpdate>true</CanUpdate>
   <CanInsert>true</CanInsert>
   <EntityViewName>CLIENTES.GRID</EntityViewName>
@@ -37,7 +37,8 @@
   <FormUrl>~/Pages/Clientes/Form.aspx</FormUrl>
   <ShowExport>true</ShowExport>
   <UserDefinedDisableRowSelection>false</UserDefinedDisableRowSelection>
-</SimpleGridAttributes>]]></XmlAttributes>
+</SimpleGridAttributes>
+]]></XmlAttributes>
       <Level>Benner</Level>
     </PageWidgetPortable>
   </Widgets>

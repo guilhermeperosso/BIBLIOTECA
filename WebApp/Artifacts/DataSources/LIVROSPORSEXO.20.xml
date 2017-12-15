@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DataSourcePortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Identifier>LIVROSPORSEXO</Identifier>
+  <Name>LIVROS POR SEXO</Name>
+  <Content><![CDATA[<DataSourceDefinition>
+  <FromSql Alias="A" SelectCommand="SELECT TOP 5 LIVRO, COUNT(*) C FROM EMPRESTIMOS GROUP BY LIVRO" />
+  <Fields>
+    <Field Alias="LIVRO" From="A" Path="LIVRO" />
+    <Field Alias="C" From="A" Path="C" />
+  </Fields>
+</DataSourceDefinition>
+]]></Content>
+  <Level>Benner</Level>
+</DataSourcePortable>

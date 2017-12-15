@@ -29,7 +29,7 @@ namespace Benner.Biblioteca.Entidades
         {
             var cliente = _clienteDao.Get(ClienteHandle);
             var livro = _livroDao.Get(LivroHandle);
-            
+
             if (DataDevolucao == null)
             {
                 var dias = DataFinal.Value <= DataInicio.Value;
@@ -55,9 +55,11 @@ namespace Benner.Biblioteca.Entidades
         {
             var cliente = _clienteDao.Get(ClienteHandle);
             var livro = _livroDao.Get(LivroHandle);
-            var livroCliente = _livroClienteDao.Create();
-
-            livroCliente.VinculaLivroCliente(cliente, livro);
+            if (DataDevolucao == null)
+            {
+                var livroCliente = _livroClienteDao.Create();
+                livroCliente.VinculaLivroCliente(cliente, livro);
+            }
             base.Saved();
         }
 
@@ -75,10 +77,10 @@ namespace Benner.Biblioteca.Entidades
             var livro = _livroDao.Get(LivroHandle);
             if (DataDevolucao == null)
             {
-                    livro.Emprestado = false;
-                    _livroDao.Save(livro);
-                    emprestimo.DataDevolucao = DateTime.Now.Date;
-                    _emprestimoDao.Save(emprestimo);
+                livro.Emprestado = false;
+                _livroDao.Save(livro);
+                emprestimo.DataDevolucao = DateTime.Now.Date;
+                _emprestimoDao.Save(emprestimo);
             }
             else
             {

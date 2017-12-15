@@ -32,7 +32,7 @@ namespace Benner.Biblioteca.Entidades
         
         /// <summary>
         /// Ativo (ATIVO.)
-        /// Opcional = N, Invisível = True, Default = False
+        /// Opcional = N, Invisível = False, Default = False
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
         System.Nullable<bool> Ativo
@@ -110,7 +110,7 @@ namespace Benner.Biblioteca.Entidades
         
         /// <summary>
         /// Ativo (ATIVO.)
-        /// Opcional = N, Invisível = True, Default = False
+        /// Opcional = N, Invisível = False, Default = False
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
         public System.Nullable<bool> Ativo

@@ -5,9 +5,9 @@
   <MenuItems>
     <MenuItemPortable>
       <Id>PAGES_PERFIL</Id>
-      <Order>2</Order>
+      <Order>1</Order>
       <Type>Page</Type>
-      <Name>Meu Perfil</Name>
+      <Name>Perfil</Name>
       <PageId>PAGES_PERFIL</PageId>
       <Active>true</Active>
       <Level>Benner</Level>

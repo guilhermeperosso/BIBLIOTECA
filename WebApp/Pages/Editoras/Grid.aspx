@@ -5,7 +5,7 @@
      
       <asp:Content ID="Content1" ContentPlaceHolderID="Main" Runat="Server">
     <div class="row">
-        <wes:SimpleGrid runat="server" ID="GRIDEDITORAS" Title="Editoras" Subtitle="" PortletCssClass="" PortletLayout="Default" BootstrapCols="12" FontIcon="" ShowTitle="true" ProviderWidgetUniqueId="" ChromeState="Normal" CanDelete="True" CanUpdate="True" CanInsert="True" EntityViewName="EDITORAS.GRID" Mode="Selectable" UserDefinedSelectColumnVisible="False" UserDefinedPageSize="10" SystemFilterOnly="False" DisplayRowCommand="True" CompanyFilterMode="OnlyCompany" FormUrl="~/Pages/Editoras/Form.aspx" ShowExport="True" UserDefinedDisableRowSelection="False" PageWidgetHandle="166" Level="20" Order="100"  />
+        <wes:SimpleGrid runat="server" ID="GRIDEDITORAS" Title="Editoras" Subtitle="" PortletCssClass="" PortletLayout="Default" BootstrapCols="12" FontIcon="" ShowTitle="true" ProviderWidgetUniqueId="" ChromeState="Normal" CanDelete="False" CanUpdate="True" CanInsert="True" EntityViewName="EDITORAS.GRID" Mode="Selectable" UserDefinedSelectColumnVisible="False" UserDefinedPageSize="10" SystemFilterOnly="False" DisplayRowCommand="True" CompanyFilterMode="OnlyCompany" FormUrl="~/Pages/Editoras/Form.aspx" ShowExport="True" UserDefinedDisableRowSelection="False" PageWidgetHandle="166" Level="20" Order="100"  />
         </div>
     
       </asp:Content>

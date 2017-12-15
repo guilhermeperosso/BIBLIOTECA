@@ -25,7 +25,7 @@
       <BootstrapCols>12</BootstrapCols>
       <XmlAttributes><![CDATA[<SimpleGridAttributes>
   <CanDelete>true</CanDelete>
-  <CanUpdate>true</CanUpdate>
+  <CanUpdate>false</CanUpdate>
   <CanInsert>true</CanInsert>
   <EntityViewName>EMPRESTIMOS.GRID</EntityViewName>
   <Mode>1</Mode>
@@ -37,7 +37,8 @@
   <FormUrl>~/Pages/Emprestimos/Form.aspx</FormUrl>
   <ShowExport>true</ShowExport>
   <UserDefinedDisableRowSelection>false</UserDefinedDisableRowSelection>
-</SimpleGridAttributes>]]></XmlAttributes>
+</SimpleGridAttributes>
+]]></XmlAttributes>
       <Level>Benner</Level>
     </PageWidgetPortable>
   </Widgets>

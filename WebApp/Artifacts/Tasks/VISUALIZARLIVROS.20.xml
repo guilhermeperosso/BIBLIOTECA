@@ -12,6 +12,7 @@
   <Operations>
     <string>EMPRESTIMOS|VIEW</string>
     <string>LIVROS|VIEW</string>
+    <string>TESTE.DATASOURCE|VIEW</string>
   </Operations>
   <Process />
   <Tasks />
