@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<DataSourcePortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Identifier>TESTE</Identifier>
+  <Name>TESTE</Name>
+  <Content><![CDATA[<DataSourceDefinition>
+  <FromSql Alias="A" SelectCommand="SELECT TOP 5 TITULO,NMEMPRESTIMOS FROM LIVROS WHERE NMEMPRESTIMOS &gt; 0 ORDER BY NMEMPRESTIMOS DESC" />
+  <Fields>
+    <Field Alias="TITULO" From="A" Path="TITULO" />
+    <Field Alias="NMEMPRESTIMOS" From="A" Path="NMEMPRESTIMOS" />
+  </Fields>
+</DataSourceDefinition>
+]]></Content>
+  <Level>Benner</Level>
+</DataSourcePortable>

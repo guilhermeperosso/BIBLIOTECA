@@ -1,72 +1,44 @@
 <?xml version="1.0"?>
 <ViewPortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>CLIENTES.FORM</Name>
+  <Name>LIVROSCLIENTE.GRID</Name>
   <Level>Benner</Level>
-  <EntityName>CLIENTES</EntityName>
-  <Type>Formulário</Type>
-  <Version>11</Version>
-  <FormDefinition entityDefinitionName="CLIENTES" name="CLIENTES.FORM" title="CLIENTES" inherited="true">
+  <EntityName>LIVROSCLIENTE</EntityName>
+  <Type>Grid</Type>
+  <Version>10</Version>
+  <GridDefinition entityDefinitionName="LIVROSCLIENTE" name="LIVROSCLIENTE.GRID" title="LIVROSCLIENTE" inherited="true">
     <IsContextCached>false</IsContextCached>
     <Fields />
     <RecordReadOnly>false</RecordReadOnly>
     <TableReadOnly>false</TableReadOnly>
-    <Pages>
-      <FormPage key="GERAL" inherited="true">
-        <visible xsi:nil="true" />
-        <Items>
-          <FormPageItem xsi:type="FormPageField" key="NOME" inherited="true">
-            <layout xsi:nil="true" />
-            <bootstrapCols xsi:nil="true" />
-          </FormPageItem>
-          <FormPageItem xsi:type="FormPageField" key="DATANASC" inherited="true">
-            <layout xsi:nil="true" />
-            <bootstrapCols xsi:nil="true" />
-          </FormPageItem>
-          <FormPageItem xsi:type="FormPageField" key="SEXO" inherited="true">
-            <layout xsi:nil="true" />
-            <bootstrapCols xsi:nil="true" />
-          </FormPageItem>
-          <FormPageItem xsi:type="FormPageField" key="USUARIO" inherited="true">
-            <layout xsi:nil="true" />
-            <bootstrapCols xsi:nil="true" />
-          </FormPageItem>
-        </Items>
-      </FormPage>
-    </Pages>
-    <Column>4</Column>
-    <FormCaptionPosition>Left</FormCaptionPosition>
-    <SubstituteViewName xsi:nil="true" />
+    <BehaveAsUnstructuredGrid>false</BehaveAsUnstructuredGrid>
     <FieldDefinitions>
-      <FormFieldDefinition xsi:type="FormFieldStringDefinition" key="NOME" inherited="true">
+      <GridFieldDefinition xsi:type="GridAssociationFieldDefinition" key="CLIENTE" inherited="true">
         <visible xsi:nil="true" />
         <DataAccessLevel xsi:nil="true" />
         <Required xsi:nil="true" />
         <HasScriptEvent xsi:nil="true" />
-        <renderTitle xsi:nil="true" />
-        <lines xsi:nil="true" />
-      </FormFieldDefinition>
-      <FormFieldDefinition key="DATANASC" inherited="true">
+        <footerBehavior>None</footerBehavior>
+        <Width />
+      </GridFieldDefinition>
+      <GridFieldDefinition xsi:type="GridAssociationFieldDefinition" key="LIVRO" inherited="true">
         <visible xsi:nil="true" />
         <DataAccessLevel xsi:nil="true" />
         <Required xsi:nil="true" />
         <HasScriptEvent xsi:nil="true" />
-        <renderTitle xsi:nil="true" />
-      </FormFieldDefinition>
-      <FormFieldDefinition key="SEXO" inherited="true">
+        <footerBehavior>None</footerBehavior>
+        <Width />
+      </GridFieldDefinition>
+      <GridFieldDefinition key="HANDLE" inherited="true">
         <visible xsi:nil="true" />
         <DataAccessLevel xsi:nil="true" />
         <Required xsi:nil="true" />
         <HasScriptEvent xsi:nil="true" />
-        <renderTitle xsi:nil="true" />
-      </FormFieldDefinition>
-      <FormFieldDefinition xsi:type="FormFieldAssociationDefinition" key="USUARIO" inherited="true">
-        <visible xsi:nil="true" />
-        <DataAccessLevel xsi:nil="true" />
-        <Required xsi:nil="true" />
-        <HasScriptEvent xsi:nil="true" />
-        <renderTitle xsi:nil="true" />
-      </FormFieldDefinition>
+        <footerBehavior>None</footerBehavior>
+        <Width />
+      </GridFieldDefinition>
     </FieldDefinitions>
+    <SubstituteViewName xsi:nil="true" />
+    <SortFields />
     <Commands>
       <Command title="" key="New" inherited="true">
         <visible xsi:nil="true" />
@@ -76,13 +48,6 @@
         <context xsi:nil="true" />
       </Command>
       <Command title="" key="Edit" inherited="true">
-        <visible xsi:nil="true" />
-        <showModal xsi:nil="true" />
-        <modalSize xsi:nil="true" />
-        <showInAllLevelsStructuredTable xsi:nil="true" />
-        <context xsi:nil="true" />
-      </Command>
-      <Command title="" key="Delete" inherited="true">
         <visible xsi:nil="true" />
         <showModal xsi:nil="true" />
         <modalSize xsi:nil="true" />
@@ -110,6 +75,20 @@
         <showInAllLevelsStructuredTable xsi:nil="true" />
         <context xsi:nil="true" />
       </Command>
+      <Command title="" key="Delete" inherited="true">
+        <visible xsi:nil="true" />
+        <showModal xsi:nil="true" />
+        <modalSize xsi:nil="true" />
+        <showInAllLevelsStructuredTable xsi:nil="true" />
+        <context xsi:nil="true" />
+      </Command>
+      <Command title="" key="View" inherited="true">
+        <visible xsi:nil="true" />
+        <showModal xsi:nil="true" />
+        <modalSize xsi:nil="true" />
+        <showInAllLevelsStructuredTable xsi:nil="true" />
+        <context xsi:nil="true" />
+      </Command>
     </Commands>
-  </FormDefinition>
+  </GridDefinition>
 </ViewPortable>

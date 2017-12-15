@@ -42,17 +42,6 @@ namespace Benner.Biblioteca.Entidades
         }
         
         /// <summary>
-        /// Livros (LIVROS.)
-        /// Opcional = N, Invisível = False
-        /// </summary>
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
-        ClientesLivrosListaItens Livros
-        {
-            get;
-            set;
-        }
-        
-        /// <summary>
         /// Nome (NOME.)
         /// Opcional = N, Invisível = False, Tamanho = 50
         /// </summary>
@@ -69,6 +58,20 @@ namespace Benner.Biblioteca.Entidades
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
         ClientesSexoRadioItens Sexo
+        {
+            get;
+            set;
+        }
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
+        Benner.Tecnologia.Metadata.Entities.IZGrupoUsuarios UsuarioInstance
+        {
+            get;
+            set;
+        }
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
+        Handle UsuarioHandle
         {
             get;
             set;
@@ -91,30 +94,6 @@ namespace Benner.Biblioteca.Entidades
         public static ClientesDao CreateInstance()
         {
             return CreateInstance<ClientesDao>();
-        }
-    }
-    
-    /// <summary>
-    /// Esta classe contém os itens do campo LIVROS.
-    /// </summary>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
-    public class ClientesLivrosListaItens : ListItems<ClientesLivrosListaItens>
-    {
-        
-		public static implicit operator ClientesLivrosListaItens(int index)
-		{
-			return GetByIndex(index);
-		}
-
-		public static implicit operator int(ClientesLivrosListaItens item)
-		{
-			return item.Index;
-		}
-        
-        static ClientesLivrosListaItens()
-        {
-
-
         }
     }
     
@@ -170,9 +149,9 @@ namespace Benner.Biblioteca.Entidades
 		public static class FieldNames
 		{
 			public const string DataNascimento = "DATANASC";
-			public const string Livros = "LIVROS";
 			public const string Nome = "NOME";
 			public const string Sexo = "SEXO";
+			public const string Usuario = "USUARIO";
 		}
 
         
@@ -190,29 +169,6 @@ namespace Benner.Biblioteca.Entidades
             set
             {
                 Fields["DATANASC"] = value;
-            }
-        }
-        
-        /// <summary>
-        /// Livros (LIVROS.)
-        /// Opcional = N, Invisível = False
-        /// </summary>
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
-        public ClientesLivrosListaItens Livros
-        {
-            get
-            {
-                ListItem listItem = Fields["LIVROS"] as ListItem;
-				if (listItem != null)
-					return new ClientesLivrosListaItens { Index = listItem.Value, Description = listItem.Text };
-				return null;
-            }
-            set
-            {
-                if (value != null)
-					Fields["LIVROS"] = new ListItem(value.Index, value.Description);
-				else
-					Fields["LIVROS"] = null;
             }
         }
         
@@ -253,6 +209,72 @@ namespace Benner.Biblioteca.Entidades
 					Fields["SEXO"] = new RadioItem(value.Index, value.Description);
 				else
 					Fields["SEXO"] = null;
+            }
+        }
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
+        public Benner.Tecnologia.Metadata.Entities.IZGrupoUsuarios UsuarioInstance
+        {
+            get
+            {
+                if (Usuario.Handle == null)
+                {
+					return null;
+                }
+                return Usuario.Instance;
+            }
+            set
+            {
+                if (value == null)
+                {
+					Usuario = null;
+					return;
+                }
+                Usuario.Instance = (Benner.Tecnologia.Metadata.Entities.ZGrupoUsuarios) value;
+            }
+        }
+        
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
+        public Handle UsuarioHandle
+        {
+            get
+            {
+                return Usuario.Handle;
+            }
+            set
+            {
+                Usuario.Handle = value;
+            }
+        }
+        
+        /// <summary>
+        /// Usuario (USUARIO.)
+        /// Opcional = N, Invisível = False, Pesquisar = Z_GRUPOUSUARIOS
+        /// </summary>
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
+        public Benner.Tecnologia.Common.EntityAssociation<Benner.Tecnologia.Metadata.Entities.ZGrupoUsuarios> Usuario
+        {
+            get
+            {
+                return (Fields["USUARIO"] as EntityAssociation).Wrap<Benner.Tecnologia.Metadata.Entities.ZGrupoUsuarios>(Benner.Tecnologia.Metadata.Entities.ZGrupoUsuarios.Get);
+            }
+            set
+            {
+                if (value == null)
+                {
+                    this.Usuario.Handle = null;
+                }
+                else
+                {
+                    if (value.Association.IsLoaded)
+                    {
+                        this.Usuario.Instance = value.Instance;
+                    }
+                    else
+                    {
+                        this.Usuario.Handle = value.Handle;
+                    }
+                }
             }
         }
     }

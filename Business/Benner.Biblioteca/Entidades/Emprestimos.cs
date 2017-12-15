@@ -23,12 +23,13 @@ namespace Benner.Biblioteca.Entidades
         private readonly ILivrosDao _livroDao = LivrosDao.CreateInstance();
         private readonly IEmprestimosDao _emprestimoDao = EmprestimosDao.CreateInstance();
         private readonly IClientesDao _clienteDao = ClientesDao.CreateInstance();
-
+        private readonly ILivrosclienteDao _livroClienteDao = LivrosclienteDao.CreateInstance();
 
         protected override void Validating()
         {
             var cliente = _clienteDao.Get(ClienteHandle);
             var livro = _livroDao.Get(LivroHandle);
+            
             if (DataDevolucao == null)
             {
                 var dias = DataFinal.Value <= DataInicio.Value;
@@ -39,6 +40,7 @@ namespace Benner.Biblioteca.Entidades
                 else
                 {
                     livro.Emprestado = true;
+                    livro.NumeroEmprestimos++;
                     _livroDao.Save(livro);
                 }
             }
@@ -47,6 +49,16 @@ namespace Benner.Biblioteca.Entidades
                 livro.Emprestado = false;
             }
             base.Validating();
+        }
+
+        protected override void Saved()
+        {
+            var cliente = _clienteDao.Get(ClienteHandle);
+            var livro = _livroDao.Get(LivroHandle);
+            var livroCliente = _livroClienteDao.Create();
+
+            livroCliente.VinculaLivroCliente(cliente, livro);
+            base.Saved();
         }
 
         protected override void Editing()

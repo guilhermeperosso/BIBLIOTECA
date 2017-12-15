@@ -20,5 +20,11 @@ namespace Benner.Biblioteca.Entidades
     /// </summary>
     public partial class Livros
     {
+        protected override void Creating()
+        {
+            NumeroEmprestimos = 0;
+            base.Creating();
+        }
+
     }
 }

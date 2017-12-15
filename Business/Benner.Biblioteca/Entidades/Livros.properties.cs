@@ -84,6 +84,17 @@ namespace Benner.Biblioteca.Entidades
         }
         
         /// <summary>
+        /// Número de Empréstimos (NMEMPRESTIMOS.)
+        /// Opcional = N, Invisível = True, Valor Mínimo = , Valor Máximo = , Tipo do Builder = Inteiro
+        /// </summary>
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
+        System.Nullable<long> NumeroEmprestimos
+        {
+            get;
+            set;
+        }
+        
+        /// <summary>
         /// Titulo (TITULO.)
         /// Opcional = N, Invisível = False, Tamanho = 100
         /// </summary>
@@ -131,6 +142,7 @@ namespace Benner.Biblioteca.Entidades
 			public const string Editora = "EDITORA";
 			public const string Emprestado = "EMPRESTADO";
 			public const string Genero = "GENERO";
+			public const string NumeroEmprestimos = "NMEMPRESTIMOS";
 			public const string Titulo = "TITULO";
 		}
 
@@ -347,6 +359,23 @@ namespace Benner.Biblioteca.Entidades
                         this.Genero.Handle = value.Handle;
                     }
                 }
+            }
+        }
+        
+        /// <summary>
+        /// Número de Empréstimos (NMEMPRESTIMOS.)
+        /// Opcional = N, Invisível = True, Valor Mínimo = , Valor Máximo = , Tipo do Builder = Inteiro
+        /// </summary>
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
+        public System.Nullable<long> NumeroEmprestimos
+        {
+            get
+            {
+                return Fields["NMEMPRESTIMOS"] as System.Nullable<System.Int64>;
+            }
+            set
+            {
+                Fields["NMEMPRESTIMOS"] = value;
             }
         }
         

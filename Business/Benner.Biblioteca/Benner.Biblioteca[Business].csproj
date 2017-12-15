@@ -38,6 +38,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\Lib\Benner.Tecnologia.Common2.dll</HintPath>
     </Reference>
+    <Reference Include="BENNER.TECNOLOGIA.METADATA, Version=2008.0.0.0, Culture=neutral, PublicKeyToken=f2db26731026fd37, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Lib\BENNER.TECNOLOGIA.METADATA.DLL</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -72,6 +76,10 @@
     <Compile Include="Entidades\Livros.cs" />
     <Compile Include="Entidades\Livros.properties.cs">
       <DependentUpon>Livros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Entidades\Livroscliente.cs" />
+    <Compile Include="Entidades\Livroscliente.properties.cs">
+      <DependentUpon>Livroscliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

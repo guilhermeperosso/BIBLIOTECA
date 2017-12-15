@@ -48,11 +48,11 @@
       <WidgetTypeId>SimpleGrid</WidgetTypeId>
       <BootstrapCols>12</BootstrapCols>
       <XmlAttributes><![CDATA[<SimpleGridAttributes>
-  <CanDelete>false</CanDelete>
+  <CanDelete>true</CanDelete>
   <CanUpdate>false</CanUpdate>
   <CanInsert>false</CanInsert>
-  <EntityViewName>EMPRESTIMOS.GRID</EntityViewName>
-  <Mode>0</Mode>
+  <EntityViewName>LIVROSCLIENTE.GRID</EntityViewName>
+  <Mode>1</Mode>
   <UserDefinedSelectColumnVisible>false</UserDefinedSelectColumnVisible>
   <UserDefinedPageSize>10</UserDefinedPageSize>
   <SystemFilterOnly>false</SystemFilterOnly>

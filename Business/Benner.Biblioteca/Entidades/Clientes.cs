@@ -12,15 +12,13 @@ using System.Text;
 
 namespace Benner.Biblioteca.Entidades
 {
-    
-    
+
+
     /// <summary>
     /// Nome da Tabela: CLIENTES.
     /// Essa é uma classe parcial, os atributos, herança e propriedades estão definidos no arquivo Clientes.properties.cs
     /// </summary>
     public partial class Clientes
     {
-       
-
     }
 }

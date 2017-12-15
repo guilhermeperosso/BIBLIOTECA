@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<FilterPortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ViewName>LIVROSCLIENTE.GRID</ViewName>
+  <Level>Benner</Level>
+  <EntityName>LIVROSCLIENTE</EntityName>
+  <Filters>
+    <FilterItemPortable>
+      <Name>Filtra Usuario</Name>
+      <Type>Conditions</Type>
+      <ShowEmptyResults>false</ShowEmptyResults>
+      <AdvancedFilterConditions>1</AdvancedFilterConditions>
+      <ConditionsContent><![CDATA[<ArrayOfFilterCondition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <FilterCondition Index="1" FieldName="ATIVO">
+    <FieldDefinitionName>BooleanFieldDefinition</FieldDefinitionName>
+    <Operator>
+      <Name>igual</Name>
+      <DatabaseOperator>=</DatabaseOperator>
+      <IsFunction>false</IsFunction>
+    </Operator>
+    <Value xsi:type="xsd:boolean">true</Value>
+    <UserInputRequired>false</UserInputRequired>
+    <Required>false</Required>
+    <IsManuallyDefined>false</IsManuallyDefined>
+    <Properties />
+    <ParameterCollection />
+  </FilterCondition>
+</ArrayOfFilterCondition>
+]]></ConditionsContent>
+      <WhereClauseContent><![CDATA[<WhereClause xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Where>A.ATIVO = :1__ATIVO</Where>
+  <Parameters>
+    <Parameter>
+      <Name>1__ATIVO</Name>
+      <Value xsi:type="xsd:string">S</Value>
+      <Direction>Input</Direction>
+      <DataType>String</DataType>
+      <Precision>0</Precision>
+      <Scale>0</Scale>
+      <Size>0</Size>
+    </Parameter>
+  </Parameters>
+</WhereClause>
+]]></WhereClauseContent>
+      <Visible>true</Visible>
+    </FilterItemPortable>
+  </Filters>
+</FilterPortable>
