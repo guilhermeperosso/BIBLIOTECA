@@ -77,15 +77,43 @@ namespace Benner.Biblioteca.Entidades
             var livro = _livroDao.Get(LivroHandle);
             if (DataDevolucao == null)
             {
-                livro.Emprestado = false;
-                _livroDao.Save(livro);
                 emprestimo.DataDevolucao = DateTime.Now.Date;
-                _emprestimoDao.Save(emprestimo);
+                if (DataDevolucao > DataFinal)
+                {
+
+                }else
+                {
+                    livro.Emprestado = false;
+                    _livroDao.Save(livro);
+                    _emprestimoDao.Save(emprestimo);
+                }
             }
             else
             {
                 throw new BusinessException("Este livro já foi devolvido.");
             }
+        }
+
+        public void PagarMulta(BusinessArgs args)
+        {
+            var emprestimo = _emprestimoDao.Get(Handle);
+            Atrasado = DataFinal < DateTime.Now.Date;
+            if (Atrasado == true)
+            {
+                decimal diasAtraso = (DateTime.Now.Date- DataFinal.Value).Days;
+                Multa = diasAtraso * (decimal)1.50;
+                Atrasado = false;
+                _emprestimoDao.Save(emprestimo);
+            }
+        }
+
+        protected override void Deleting()
+        {
+            if (DataDevolucao == null)
+            {
+                throw new BusinessException("Não é possível excluir um emprestimo ativo");
+            }
+            base.Deleting();
         }
     }
 }

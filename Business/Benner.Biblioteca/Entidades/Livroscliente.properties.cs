@@ -30,17 +30,6 @@ namespace Benner.Biblioteca.Entidades
     public partial interface ILivroscliente : IEntityBase
     {
         
-        /// <summary>
-        /// Ativo (ATIVO.)
-        /// Opcional = N, Invisível = False, Default = False
-        /// </summary>
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
-        System.Nullable<bool> Ativo
-        {
-            get;
-            set;
-        }
-        
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
         Benner.Biblioteca.Entidades.IClientes ClienteInstance
         {
@@ -102,28 +91,10 @@ namespace Benner.Biblioteca.Entidades
         /// </summary>
 		public static class FieldNames
 		{
-			public const string Ativo = "ATIVO";
 			public const string Cliente = "CLIENTE";
 			public const string Livro = "LIVRO";
 		}
 
-        
-        /// <summary>
-        /// Ativo (ATIVO.)
-        /// Opcional = N, Invisível = False, Default = False
-        /// </summary>
-        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
-        public System.Nullable<bool> Ativo
-        {
-            get
-            {
-                return Fields["ATIVO"] as System.Nullable<System.Boolean>;
-            }
-            set
-            {
-                Fields["ATIVO"] = value;
-            }
-        }
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
         public Benner.Biblioteca.Entidades.IClientes ClienteInstance

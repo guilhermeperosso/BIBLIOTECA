@@ -34,6 +34,10 @@
             <layout xsi:nil="true" />
             <bootstrapCols xsi:nil="true" />
           </FormPageItem>
+          <FormPageItem xsi:type="FormPageField" key="ATRASADO" inherited="true">
+            <layout xsi:nil="true" />
+            <bootstrapCols xsi:nil="true" />
+          </FormPageItem>
         </Items>
       </FormPage>
     </Pages>
@@ -92,13 +96,20 @@
           <Value />
         </CustomLookupPageUrl>
       </FormFieldDefinition>
+      <FormFieldDefinition key="ATRASADO" inherited="true">
+        <visible>false</visible>
+        <DataAccessLevel xsi:nil="true" />
+        <Required>false</Required>
+        <HasScriptEvent xsi:nil="true" />
+        <renderTitle>true</renderTitle>
+      </FormFieldDefinition>
     </FieldDefinitions>
     <Commands>
       <Command title="" key="New" inherited="true">
         <visible xsi:nil="true" />
-        <showModal xsi:nil="true" />
-        <modalSize xsi:nil="true" />
-        <showInAllLevelsStructuredTable xsi:nil="true" />
+        <showModal>true</showModal>
+        <modalSize>Large</modalSize>
+        <showInAllLevelsStructuredTable>false</showInAllLevelsStructuredTable>
         <context xsi:nil="true" />
       </Command>
       <Command title="" key="Edit" inherited="true">

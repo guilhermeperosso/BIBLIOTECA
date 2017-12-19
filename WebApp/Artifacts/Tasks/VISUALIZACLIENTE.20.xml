@@ -4,10 +4,13 @@
   <Title>Visualiza Cliente</Title>
   <Level>Benner</Level>
   <Reports />
-  <Pages />
+  <Pages>
+    <string>PAGES_LIVROSCLIENTE_GRID</string>
+  </Pages>
   <Components />
   <Operations>
     <string>CLIENTES|VIEW</string>
+    <string>LIVROSCLIENTE|VIEW</string>
   </Operations>
   <Process />
   <Tasks />

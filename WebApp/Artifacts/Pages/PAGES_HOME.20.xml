@@ -5,9 +5,9 @@
   <Level>Tecnologia</Level>
   <Widgets>
     <PageWidgetPortable>
-      <Id>TESTESQL</Id>
+      <Id>LIVROSPOPULARES</Id>
       <Title>Livros Populares</Title>
-      <Order>20</Order>
+      <Order>10</Order>
       <ShowTitle>true</ShowTitle>
       <PortletCssClass />
       <FontIcon />
@@ -20,38 +20,12 @@
   <CanDelete>true</CanDelete>
   <CanUpdate>true</CanUpdate>
   <CanInsert>true</CanInsert>
-  <EntityViewName>TESTE.DATASOURCE.GRID</EntityViewName>
+  <EntityViewName>LIVROSPOPULARES.DATASOURCE.GRID</EntityViewName>
   <Mode>0</Mode>
   <CompanyFilterMode>1</CompanyFilterMode>
   <ChartType>Pie</ChartType>
   <ChartHeight>400</ChartHeight>
   <ChartDefinition>eyJ0eXBlIjoicGllIiwibGFuZ3VhZ2UiOiJwdCIsInRoZW1lIjoibGlnaHQiLCJwdWxsT3V0T25seU9uZSI6dHJ1ZSwiZXhwb3J0Ijp7ImVuYWJsZWQiOnRydWV9LCJ0aXRsZUZpZWxkIjoidGl0dWxvIiwidmFsdWVGaWVsZCI6Im5tZW1wcmVzdGltb3MiLCJhbHBoYUZpZWxkIjoiZmlsbF9hbHBoYV9maWVsZCIsImJhbGxvb25UZXh0IjoiW1t0aXRsZV1dPGJyPjxzcGFuIHN0eWxlPSdmb250LXNpemU6MTRweCc+PGI+W1t2YWx1ZV1dPC9iPiAoW1twZXJjZW50c11dJSk8L3NwYW4+IiwibGFiZWxUZXh0IjoiW1t0aXRsZV1dOiBbW3ZhbHVlXV0iLCJsYWJlbHNFbmFibGVkIjp0cnVlLCJsZWdlbmQiOnsiZW5hYmxlZCI6ZmFsc2UsImFsaWduIjoiY2VudGVyIiwibWFya2VyVHlwZSI6ImNpcmNsZSJ9LCJpbm5lclJhZGl1cyI6IjAlIiwiYW5nbGUiOjMwLCJkZXB0aDNEIjozMH0=</ChartDefinition>
-</AmCharstAttributes>
-]]></XmlAttributes>
-      <Level>Benner</Level>
-    </PageWidgetPortable>
-    <PageWidgetPortable>
-      <Id>LIVROSPORSEXO</Id>
-      <Title>Livros por Sexo</Title>
-      <Order>30</Order>
-      <ShowTitle>true</ShowTitle>
-      <PortletCssClass />
-      <FontIcon />
-      <Subtitle />
-      <ChromeState>Normal</ChromeState>
-      <PortletLayout>Default</PortletLayout>
-      <WidgetTypeId>AmCharts</WidgetTypeId>
-      <BootstrapCols>12</BootstrapCols>
-      <XmlAttributes><![CDATA[<AmCharstAttributes>
-  <CanDelete>true</CanDelete>
-  <CanUpdate>true</CanUpdate>
-  <CanInsert>true</CanInsert>
-  <EntityViewName>LIVROSPORSEXO.DATASOURCE.GRID</EntityViewName>
-  <Mode>0</Mode>
-  <CompanyFilterMode>1</CompanyFilterMode>
-  <ChartType>Pie</ChartType>
-  <ChartHeight>400</ChartHeight>
-  <ChartDefinition>eyJ0eXBlIjoicGllIiwibGFuZ3VhZ2UiOiJwdCIsInRoZW1lIjoibGlnaHQiLCJwdWxsT3V0T25seU9uZSI6dHJ1ZSwiZXhwb3J0Ijp7ImVuYWJsZWQiOnRydWV9LCJ0aXRsZUZpZWxkIjoibGl2cm8iLCJ2YWx1ZUZpZWxkIjoiYyIsImFscGhhRmllbGQiOiJmaWxsX2FscGhhX2ZpZWxkIiwiYmFsbG9vblRleHQiOiJbW3RpdGxlXV08YnI+PHNwYW4gc3R5bGU9J2ZvbnQtc2l6ZToxNHB4Jz48Yj5bW3ZhbHVlXV08L2I+IChbW3BlcmNlbnRzXV0lKTwvc3Bhbj4iLCJsYWJlbFRleHQiOiJbW3RpdGxlXV06IFtbdmFsdWVdXSIsImxhYmVsc0VuYWJsZWQiOnRydWUsImxlZ2VuZCI6eyJlbmFibGVkIjp0cnVlLCJhbGlnbiI6ImNlbnRlciIsIm1hcmtlclR5cGUiOiJjaXJjbGUiLCJsYWJlbFRleHQiOiJbW3RpdGxlXV0iLCJ2YWx1ZVRleHQiOiIiLCJwb3NpdGlvbiI6ImJvdHRvbSJ9LCJpbm5lclJhZGl1cyI6IjAlIiwiYW5nbGUiOjMwLCJkZXB0aDNEIjozMH0=</ChartDefinition>
 </AmCharstAttributes>
 ]]></XmlAttributes>
       <Level>Benner</Level>

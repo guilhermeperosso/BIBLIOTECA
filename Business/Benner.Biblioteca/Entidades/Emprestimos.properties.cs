@@ -30,6 +30,17 @@ namespace Benner.Biblioteca.Entidades
     public partial interface IEmprestimos : IEntityBase
     {
         
+        /// <summary>
+        /// Atrasado (ATRASADO.)
+        /// Opcional = N, Invisível = False, Default = False
+        /// </summary>
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
+        System.Nullable<bool> Atrasado
+        {
+            get;
+            set;
+        }
+        
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
         Benner.Biblioteca.Entidades.IClientes ClienteInstance
         {
@@ -90,6 +101,17 @@ namespace Benner.Biblioteca.Entidades
             get;
             set;
         }
+        
+        /// <summary>
+        /// Multa (MULTA.)
+        /// Opcional = N, Invisível = False, Valor Mínimo = , Valor Máximo = , Tipo do Builder = Valor
+        /// </summary>
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
+        System.Nullable<decimal> Multa
+        {
+            get;
+            set;
+        }
     }
     
     /// <summary>
@@ -124,13 +146,32 @@ namespace Benner.Biblioteca.Entidades
         /// </summary>
 		public static class FieldNames
 		{
+			public const string Atrasado = "ATRASADO";
 			public const string Cliente = "CLIENTE";
 			public const string DataDevolucao = "DATADEVOLUCAO";
 			public const string DataFinal = "DATAFIM";
 			public const string DataInicio = "DATAINICIO";
 			public const string Livro = "LIVRO";
+			public const string Multa = "MULTA";
 		}
 
+        
+        /// <summary>
+        /// Atrasado (ATRASADO.)
+        /// Opcional = N, Invisível = False, Default = False
+        /// </summary>
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
+        public System.Nullable<bool> Atrasado
+        {
+            get
+            {
+                return Fields["ATRASADO"] as System.Nullable<System.Boolean>;
+            }
+            set
+            {
+                Fields["ATRASADO"] = value;
+            }
+        }
         
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
         public Benner.Biblioteca.Entidades.IClientes ClienteInstance
@@ -312,6 +353,23 @@ namespace Benner.Biblioteca.Entidades
                         this.Livro.Handle = value.Handle;
                     }
                 }
+            }
+        }
+        
+        /// <summary>
+        /// Multa (MULTA.)
+        /// Opcional = N, Invisível = False, Valor Mínimo = , Valor Máximo = , Tipo do Builder = Valor
+        /// </summary>
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
+        public System.Nullable<decimal> Multa
+        {
+            get
+            {
+                return Fields["MULTA"] as System.Nullable<System.Decimal>;
+            }
+            set
+            {
+                Fields["MULTA"] = value;
             }
         }
     }

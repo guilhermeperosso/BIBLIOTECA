@@ -24,14 +24,15 @@
       <WidgetTypeId>AjaxForm</WidgetTypeId>
       <BootstrapCols>12</BootstrapCols>
       <XmlAttributes><![CDATA[<AjaxFormAttributes>
-  <CanDelete>true</CanDelete>
-  <CanUpdate>true</CanUpdate>
+  <CanDelete>false</CanDelete>
+  <CanUpdate>false</CanUpdate>
   <CanInsert>true</CanInsert>
   <EntityViewName>EMPRESTIMOS.FORM</EntityViewName>
   <FormMode>0</FormMode>
   <IncludeRecordInRecentItems>true</IncludeRecordInRecentItems>
   <UserDefinedCommandsVisible>true</UserDefinedCommandsVisible>
-</AjaxFormAttributes>]]></XmlAttributes>
+</AjaxFormAttributes>
+]]></XmlAttributes>
       <Level>Benner</Level>
     </PageWidgetPortable>
   </Widgets>

@@ -1,48 +1,24 @@
 <?xml version="1.0"?>
 <ViewPortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>LIVROSCLIENTE.GRID</Name>
+  <Name>EMPRESTIMOS.LOOKUP</Name>
   <Level>Benner</Level>
-  <EntityName>LIVROSCLIENTE</EntityName>
+  <EntityName>EMPRESTIMOS</EntityName>
   <Type>Grid</Type>
   <Version>10</Version>
-  <GridDefinition entityDefinitionName="LIVROSCLIENTE" name="LIVROSCLIENTE.GRID" title="LIVROSCLIENTE" inherited="true">
+  <GridDefinition entityDefinitionName="EMPRESTIMOS" name="EMPRESTIMOS.LOOKUP" title="EMPRESTIMOS" inherited="true">
     <IsContextCached>false</IsContextCached>
     <Fields />
     <RecordReadOnly>false</RecordReadOnly>
     <TableReadOnly>false</TableReadOnly>
     <BehaveAsUnstructuredGrid>false</BehaveAsUnstructuredGrid>
     <FieldDefinitions>
-      <GridFieldDefinition xsi:type="GridAssociationFieldDefinition" key="LIVRO">
-        <visible>true</visible>
-        <DataAccessLevel>Edit</DataAccessLevel>
-        <Required xsi:nil="true" />
-        <HasScriptEvent xsi:nil="true" />
-        <footerBehavior>None</footerBehavior>
-        <Width />
-        <CustomLookupPageUrl>
-          <Key />
-          <Value />
-        </CustomLookupPageUrl>
-      </GridFieldDefinition>
-      <GridFieldDefinition key="ATIVO" inherited="true">
-        <visible>false</visible>
+      <GridFieldDefinition xsi:type="GridAssociationFieldDefinition" key="CLIENTE" inherited="true">
+        <visible xsi:nil="true" />
         <DataAccessLevel xsi:nil="true" />
         <Required xsi:nil="true" />
         <HasScriptEvent xsi:nil="true" />
-        <footerBehavior>None</footerBehavior>
-        <Width />
-      </GridFieldDefinition>
-      <GridFieldDefinition xsi:type="GridAssociationFieldDefinition" key="CLIENTE">
-        <visible>false</visible>
-        <DataAccessLevel>Edit</DataAccessLevel>
-        <Required xsi:nil="true" />
-        <HasScriptEvent xsi:nil="true" />
-        <footerBehavior>None</footerBehavior>
-        <Width />
-        <CustomLookupPageUrl>
-          <Key />
-          <Value />
-        </CustomLookupPageUrl>
+        <footerBehavior xsi:nil="true" />
+        <Width xsi:nil="true" />
       </GridFieldDefinition>
     </FieldDefinitions>
     <SubstituteViewName xsi:nil="true" />
@@ -96,6 +72,14 @@
         <modalSize xsi:nil="true" />
         <showInAllLevelsStructuredTable xsi:nil="true" />
         <context xsi:nil="true" />
+      </Command>
+      <Command title="Comando" key="CMD_636492813128462367">
+        <visible>true</visible>
+        <showModal>false</showModal>
+        <modalSize xsi:nil="true" />
+        <showInAllLevelsStructuredTable>false</showInAllLevelsStructuredTable>
+        <context>Record</context>
+        <ProcessDefinition xsi:type="Function" functionName="PagarMulta" />
       </Command>
     </Commands>
   </GridDefinition>

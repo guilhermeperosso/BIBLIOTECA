@@ -10,14 +10,14 @@
       <ShowEmptyResults>false</ShowEmptyResults>
       <AdvancedFilterConditions>1</AdvancedFilterConditions>
       <ConditionsContent><![CDATA[<ArrayOfFilterCondition xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <FilterCondition Index="1" FieldName="ATIVO">
-    <FieldDefinitionName>BooleanFieldDefinition</FieldDefinitionName>
+  <FilterCondition Index="1" FieldName="CLIENTE">
+    <FieldDefinitionName>AssociationFieldDefinition</FieldDefinitionName>
     <Operator>
       <Name>igual</Name>
       <DatabaseOperator>=</DatabaseOperator>
       <IsFunction>false</IsFunction>
     </Operator>
-    <Value xsi:type="xsd:boolean">true</Value>
+    <Value xsi:type="xsd:string">5</Value>
     <UserInputRequired>false</UserInputRequired>
     <Required>false</Required>
     <IsManuallyDefined>false</IsManuallyDefined>
@@ -27,13 +27,13 @@
 </ArrayOfFilterCondition>
 ]]></ConditionsContent>
       <WhereClauseContent><![CDATA[<WhereClause xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Where>A.ATIVO = :1__ATIVO</Where>
+  <Where>A.CLIENTE = :1__CLIENTE</Where>
   <Parameters>
     <Parameter>
-      <Name>1__ATIVO</Name>
-      <Value xsi:type="xsd:string">S</Value>
+      <Name>1__CLIENTE</Name>
+      <Value xsi:type="xsd:long">5</Value>
       <Direction>Input</Direction>
-      <DataType>String</DataType>
+      <DataType>Integer</DataType>
       <Precision>0</Precision>
       <Scale>0</Scale>
       <Size>0</Size>

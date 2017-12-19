@@ -5,8 +5,7 @@
      
       <asp:Content ID="Content1" ContentPlaceHolderID="Main" Runat="Server">
     <div class="row">
-        <wes:SimpleGrid runat="server" ID="MEUSLIVROS" Title="Meus Livros" Subtitle="" PortletCssClass="" PortletLayout="Default" BootstrapCols="12" FontIcon="" ShowTitle="true" ProviderWidgetUniqueId="" ChromeState="Normal" CanDelete="False" CanUpdate="False" CanInsert="False" EntityViewName="LIVROSCLIENTE.GRID" Mode="Selectable" UserDefinedSelectColumnVisible="False" UserDefinedPageSize="10" SystemFilterOnly="False" DisplayRowCommand="True" CompanyFilterMode="OnlyCompany" UserDefinedCriteriaWhereClause="CLIENTE= @USUARIO
-" ShowExport="True" UserDefinedDisableRowSelection="False" PageWidgetHandle="200" Level="20" Order="10"  />
+        <wes:SimpleGrid runat="server" ID="MEUSLIVROS" Title="Meus Livros" Subtitle="" PortletCssClass="" PortletLayout="Default" BootstrapCols="12" FontIcon="" ShowTitle="true" ProviderWidgetUniqueId="" ChromeState="Normal" CanDelete="False" CanUpdate="False" CanInsert="False" EntityViewName="LIVROSCLIENTE.GRID" Mode="Selectable" UserDefinedSelectColumnVisible="False" UserDefinedPageSize="10" SystemFilterOnly="False" DisplayRowCommand="True" CompanyFilterMode="OnlyCompany" UserDefinedCriteriaWhereClause="1=1" ShowExport="True" UserDefinedDisableRowSelection="False" PageWidgetHandle="207" Level="20" Order="10"  />
         </div>
     
       </asp:Content>

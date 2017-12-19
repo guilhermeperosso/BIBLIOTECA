@@ -121,6 +121,14 @@
         <context>Record</context>
         <ProcessDefinition xsi:type="Function" functionName="Devolver" />
       </Command>
+      <Command title="Pagar Multa" image="fa fa-dollar" color="green" key="CMD_PAGARMULTA">
+        <visible>true</visible>
+        <showModal>false</showModal>
+        <modalSize xsi:nil="true" />
+        <showInAllLevelsStructuredTable>false</showInAllLevelsStructuredTable>
+        <context>Record</context>
+        <ProcessDefinition xsi:type="Function" functionName="PagarMulta" />
+      </Command>
     </Commands>
   </GridDefinition>
 </ViewPortable>

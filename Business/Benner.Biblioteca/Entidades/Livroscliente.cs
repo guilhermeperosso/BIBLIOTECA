@@ -32,20 +32,5 @@ namespace Benner.Biblioteca.Entidades
             LivroInstance = livro;
             _livroClienteDao.Save(this);
         }
-
-        protected override void Getting()
-        {
-
-            if (ClienteInstance.UsuarioInstance.Apelido == BennerContext.Security.GetLoggedUserName())
-            {
-                Ativo = true;
-            }
-            else
-            {
-                Ativo = false;
-            }
-            base.Getting();
-        }
-
     }
 }

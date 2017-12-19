@@ -1,12 +1,11 @@
 <?xml version="1.0"?>
 <DataSourcePortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Identifier>LIVROSPORSEXO</Identifier>
-  <Name>LIVROSPORSEXO</Name>
+  <Identifier>TESTE2</Identifier>
+  <Name>TESTE2</Name>
   <Content><![CDATA[<DataSourceDefinition>
-  <FromSql Alias="A" SelectCommand="SELECT TOP 5 TITULO, SEXO, NMEMPRESTIMOS FROM CLIENTES, LIVROS WHERE LIVROS.NMEMPRESTIMOS &gt; 0" />
+  <FromSql Alias="A" SelectCommand="SELECT TOP 5 TITULO, NMEMPRESTIMOS FROM LIVROS WHERE NMEMPRESTIMOS &gt; 0 ORDER BY NMEMPRESTIMOS DESC" />
   <Fields>
     <Field Alias="TITULO" From="A" Path="TITULO" />
-    <Field Alias="SEXO" From="A" Path="SEXO" />
     <Field Alias="NMEMPRESTIMOS" From="A" Path="NMEMPRESTIMOS" />
   </Fields>
 </DataSourceDefinition>

@@ -85,7 +85,7 @@ namespace Benner.Biblioteca.Entidades
         
         /// <summary>
         /// Número de Empréstimos (NMEMPRESTIMOS.)
-        /// Opcional = S, Invisível = True, Valor Mínimo = , Valor Máximo = , Tipo do Builder = Inteiro
+        /// Opcional = S, Invisível = False, Valor Mínimo = , Valor Máximo = , Tipo do Builder = Inteiro
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
         System.Nullable<long> NumeroEmprestimos
@@ -364,7 +364,7 @@ namespace Benner.Biblioteca.Entidades
         
         /// <summary>
         /// Número de Empréstimos (NMEMPRESTIMOS.)
-        /// Opcional = S, Invisível = True, Valor Mínimo = , Valor Máximo = , Tipo do Builder = Inteiro
+        /// Opcional = S, Invisível = False, Valor Mínimo = , Valor Máximo = , Tipo do Builder = Inteiro
         /// </summary>
         [System.CodeDom.Compiler.GeneratedCodeAttribute("BEF Code Generator", "17.2.0.0")]
         public System.Nullable<long> NumeroEmprestimos

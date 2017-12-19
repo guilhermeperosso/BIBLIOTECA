@@ -28,5 +28,17 @@
       <Level>Benner</Level>
       <CssParaIcone>fa fa-book</CssParaIcone>
     </MenuItemPortable>
+    <MenuItemPortable>
+      <Id>NOVOEMPRESTIMO</Id>
+      <Order>20</Order>
+      <Type>Command</Type>
+      <Name>Novo Emprestimo</Name>
+      <CommandView>EMPRESTIMOS.FORM</CommandView>
+      <CommandName>New</CommandName>
+      <PageId>PAGES_EMPRESTIMOS_FORM</PageId>
+      <Active>true</Active>
+      <Level>Benner</Level>
+      <CssParaIcone>fa fa-plus</CssParaIcone>
+    </MenuItemPortable>
   </MenuItems>
 </MenuPortable>

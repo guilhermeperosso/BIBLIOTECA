@@ -4,11 +4,11 @@
   <Level>Tecnologia</Level>
   <MenuItems>
     <MenuItemPortable>
-      <Id>PAGES_PERFIL</Id>
+      <Id>LIVROSCLIENTE</Id>
       <Order>1</Order>
       <Type>Page</Type>
       <Name>Perfil</Name>
-      <PageId>PAGES_PERFIL</PageId>
+      <PageId>PAGES_LIVROSCLIENTE_GRID</PageId>
       <Active>true</Active>
       <Level>Benner</Level>
     </MenuItemPortable>
@@ -18,6 +18,15 @@
       <Type>Page</Type>
       <Name>Clientes</Name>
       <PageId>PAGES_CLIENTES_GRID</PageId>
+      <Active>true</Active>
+      <Level>Benner</Level>
+    </MenuItemPortable>
+    <MenuItemPortable>
+      <Id>USUARIOS</Id>
+      <Order>4</Order>
+      <Type>Page</Type>
+      <Name>Usuários</Name>
+      <PageId>GROUPUSERSGRID</PageId>
       <Active>true</Active>
       <Level>Benner</Level>
     </MenuItemPortable>
