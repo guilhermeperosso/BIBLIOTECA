@@ -38,6 +38,10 @@
             <layout xsi:nil="true" />
             <bootstrapCols xsi:nil="true" />
           </FormPageItem>
+          <FormPageItem xsi:type="FormPageField" key="MULTA" inherited="true">
+            <layout xsi:nil="true" />
+            <bootstrapCols xsi:nil="true" />
+          </FormPageItem>
         </Items>
       </FormPage>
     </Pages>
@@ -100,6 +104,13 @@
         <visible>false</visible>
         <DataAccessLevel xsi:nil="true" />
         <Required>false</Required>
+        <HasScriptEvent xsi:nil="true" />
+        <renderTitle>true</renderTitle>
+      </FormFieldDefinition>
+      <FormFieldDefinition key="MULTA" inherited="true">
+        <visible>false</visible>
+        <DataAccessLevel xsi:nil="true" />
+        <Required xsi:nil="true" />
         <HasScriptEvent xsi:nil="true" />
         <renderTitle>true</renderTitle>
       </FormFieldDefinition>

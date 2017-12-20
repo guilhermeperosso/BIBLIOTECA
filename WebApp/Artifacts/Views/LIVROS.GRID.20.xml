@@ -125,6 +125,37 @@
         <showInAllLevelsStructuredTable xsi:nil="true" />
         <context xsi:nil="true" />
       </Command>
+      <Command title="Emprestar" image="fa fa-book" key="CMD_EMPRESTAR">
+        <visible>true</visible>
+        <showModal>false</showModal>
+        <modalSize xsi:nil="true" />
+        <showInAllLevelsStructuredTable>false</showInAllLevelsStructuredTable>
+        <context>Record</context>
+        <OutputDefinition xsi:type="FormLinkDefinition">
+          <Url>~/Pages/Emprestimos/Form.aspx</Url>
+          <IsModalPage>false</IsModalPage>
+          <IsModalNavigation>false</IsModalNavigation>
+          <WhereClause>
+            <Where>A.LIVRO = @CAMPO(HANDLE)</Where>
+            <Parameters />
+          </WhereClause>
+          <SystemInstanceName>BIBLIOTECA</SystemInstanceName>
+          <TargetEntityDefinitionName>EMPRESTIMOS</TargetEntityDefinitionName>
+          <TargetSystemInstanceName>BIBLIOTECA</TargetSystemInstanceName>
+          <WhereClauseParameters />
+          <ParentEntityHandle>
+            <NullableValue xsi:nil="true" />
+          </ParentEntityHandle>
+          <TargetEntityHandle>
+            <NullableValue xsi:nil="true" />
+          </TargetEntityHandle>
+          <TargetFormMode>Insert</TargetFormMode>
+          <IsStructuredTable>false</IsStructuredTable>
+          <StructuredFieldName />
+          <StructuredTableParentNode />
+          <UseTargetDefinitionName>false</UseTargetDefinitionName>
+        </OutputDefinition>
+      </Command>
     </Commands>
   </GridDefinition>
 </ViewPortable>

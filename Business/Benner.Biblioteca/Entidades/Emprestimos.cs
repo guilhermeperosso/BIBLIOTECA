@@ -29,11 +29,13 @@ namespace Benner.Biblioteca.Entidades
         {
             var cliente = _clienteDao.Get(ClienteHandle);
             var livro = _livroDao.Get(LivroHandle);
-
+            if (DataFinal.Value < DataInicio.Value)
+            {
+                throw new BusinessException("Data final inválida.");
+            }
             if (DataDevolucao == null)
             {
-                var dias = DataFinal.Value <= DataInicio.Value;
-                if (livro.Emprestado == true && dias)
+                if (livro.Emprestado == true)
                 {
                     throw new BusinessException("Não foi possível efetuar o empréstimo.");
                 }
@@ -78,15 +80,9 @@ namespace Benner.Biblioteca.Entidades
             if (DataDevolucao == null)
             {
                 emprestimo.DataDevolucao = DateTime.Now.Date;
-                if (DataDevolucao > DataFinal)
-                {
-
-                }else
-                {
-                    livro.Emprestado = false;
-                    _livroDao.Save(livro);
-                    _emprestimoDao.Save(emprestimo);
-                }
+                livro.Emprestado = false;
+                _livroDao.Save(livro);
+                _emprestimoDao.Save(emprestimo);
             }
             else
             {
@@ -100,7 +96,7 @@ namespace Benner.Biblioteca.Entidades
             Atrasado = DataFinal < DateTime.Now.Date;
             if (Atrasado == true)
             {
-                decimal diasAtraso = (DateTime.Now.Date- DataFinal.Value).Days;
+                decimal diasAtraso = (DateTime.Now.Date - DataFinal.Value).Days;
                 Multa = diasAtraso * (decimal)1.50;
                 Atrasado = false;
                 _emprestimoDao.Save(emprestimo);
@@ -114,6 +110,12 @@ namespace Benner.Biblioteca.Entidades
                 throw new BusinessException("Não é possível excluir um emprestimo ativo");
             }
             base.Deleting();
+        }
+
+        protected override void Created()
+        {
+            DataInicio = BennerEnvironment.ServerDate;
+            base.Created();
         }
     }
 }

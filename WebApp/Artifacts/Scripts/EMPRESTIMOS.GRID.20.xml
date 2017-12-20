@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<ScriptPortable xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ViewName>EMPRESTIMOS.GRID</ViewName>
+  <EntityName>EMPRESTIMOS</EntityName>
+  <Level>Benner</Level>
+  <Scripts>
+    <ScriptItemPortable>
+      <FunctionName>OnCMD_PAGARMULTAExecute</FunctionName>
+      <LanguageName>IronPython</LanguageName>
+      <SourceCode>def OnCMD_PAGARMULTAExecute(command, entity):
+    command.RequestConfirmationBeforeExecute("Atenção, a multa será de: "", confirmar o pagamento?")
+</SourceCode>
+    </ScriptItemPortable>
+    <ScriptItemPortable>
+      <FunctionName>InitializeRow</FunctionName>
+      <LanguageName>IronPython</LanguageName>
+      <SourceCode>from System import DateTime
+def InitializeRow(entity, row):
+    if entity["DATAFIM"].GetDateTime() &lt; DateTime.Today:
+        row.GetCustomCommand("CMD_PAGARMULTA").Enabled = entity["ATRASADO"].GetBoolean()
+        row.GetCustomCommand("CMD_DEVOLUCAO").Enabled = not entity["ATRASADO"].GetBoolean()
+</SourceCode>
+    </ScriptItemPortable>
+  </Scripts>
+</ScriptPortable>

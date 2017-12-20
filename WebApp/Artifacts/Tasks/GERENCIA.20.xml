@@ -32,6 +32,7 @@
     <string>EDITORAS|VIEW</string>
     <string>EMPRESTIMOS|DEVOLVER</string>
     <string>EMPRESTIMOS|INSERT</string>
+    <string>EMPRESTIMOS|PAGARMULTA</string>
     <string>EMPRESTIMOS|UPDATE</string>
     <string>EMPRESTIMOS|VIEW</string>
     <string>GENEROS|INSERT</string>
@@ -40,6 +41,7 @@
     <string>LIVROS|INSERT</string>
     <string>LIVROS|UPDATE</string>
     <string>LIVROS|VIEW</string>
+    <string>LIVROSPOPULARES.DATASOURCE|VIEW</string>
   </Operations>
   <Process />
   <Tasks />
