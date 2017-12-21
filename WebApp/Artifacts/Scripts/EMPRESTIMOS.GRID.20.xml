@@ -14,11 +14,21 @@
     <ScriptItemPortable>
       <FunctionName>InitializeRow</FunctionName>
       <LanguageName>IronPython</LanguageName>
-      <SourceCode>from System import DateTime
+      <SourceCode>def OnCMD_DEVOLUCAOExecute(command, entity):
+    command.RequestConfirmationBeforeExecute("Atenção, você está declarando o óbito do paciente, você tem certeza que deseja declarar?")
+from System import DateTime
 def InitializeRow(entity, row):
-    if entity["DATAFIM"].GetDateTime() &lt; DateTime.Today:
-        row.GetCustomCommand("CMD_PAGARMULTA").Enabled = entity["ATRASADO"].GetBoolean()
-        row.GetCustomCommand("CMD_DEVOLUCAO").Enabled = not entity["ATRASADO"].GetBoolean()
+    if row.GetCellByName("DATADEVOLUCAO").Text == "":
+        row.GetCustomCommand("CMD_DEVOLUCAO").Enabled = False   
+</SourceCode>
+    </ScriptItemPortable>
+    <ScriptItemPortable>
+      <FunctionName>OnCMD_DEVOLUCAOExecute</FunctionName>
+      <LanguageName>IronPython</LanguageName>
+      <SourceCode>from System import DateTime
+def OnCMD_DEVOLUCAOExecute(command, entity):
+    
+        command.RequestConfirmationBeforeExecute("Atenção, você está declarando o óbito do paciente, você tem certeza que deseja declarar?")
 </SourceCode>
     </ScriptItemPortable>
   </Scripts>

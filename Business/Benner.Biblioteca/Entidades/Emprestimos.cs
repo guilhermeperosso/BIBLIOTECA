@@ -29,11 +29,11 @@ namespace Benner.Biblioteca.Entidades
         {
             var cliente = _clienteDao.Get(ClienteHandle);
             var livro = _livroDao.Get(LivroHandle);
-            if (DataFinal.Value < DataInicio.Value)
+            if (!IsEditing && DataFinal.Value < DataInicio.Value)
             {
                 throw new BusinessException("Data final inválida.");
             }
-            if (DataDevolucao == null)
+            if (!IsEditing && DataDevolucao == null)
             {
                 if (livro.Emprestado == true)
                 {
@@ -45,10 +45,6 @@ namespace Benner.Biblioteca.Entidades
                     livro.NumeroEmprestimos++;
                     _livroDao.Save(livro);
                 }
-            }
-            else
-            {
-                livro.Emprestado = false;
             }
             base.Validating();
         }
@@ -75,31 +71,34 @@ namespace Benner.Biblioteca.Entidades
 
         public void Devolver(BusinessArgs args)
         {
-            var emprestimo = _emprestimoDao.Get(Handle);
             var livro = _livroDao.Get(LivroHandle);
             if (DataDevolucao == null)
             {
-                emprestimo.DataDevolucao = DateTime.Now.Date;
-                livro.Emprestado = false;
-                _livroDao.Save(livro);
-                _emprestimoDao.Save(emprestimo);
+                if (DataFinal.Value < DateTime.Today)
+                {
+                    PagarMulta();
+                }
+                    DataDevolucao = DateTime.Today;
+                    livro.Emprestado = false;
+                    _livroDao.Save(livro);
+                    Save();
             }
             else
             {
                 throw new BusinessException("Este livro já foi devolvido.");
             }
+
         }
 
-        public void PagarMulta(BusinessArgs args)
+        public void PagarMulta()
         {
-            var emprestimo = _emprestimoDao.Get(Handle);
-            Atrasado = DataFinal < DateTime.Now.Date;
+            Atrasado = DataFinal.Value < DateTime.Today;
             if (Atrasado == true)
             {
-                decimal diasAtraso = (DateTime.Now.Date - DataFinal.Value).Days;
-                Multa = diasAtraso * (decimal)1.50;
+                decimal diasAtraso = (DateTime.Today - DataFinal.Value).Days;
+                Multa = diasAtraso * (decimal)0.75;
                 Atrasado = false;
-                _emprestimoDao.Save(emprestimo);
+                Save();
             }
         }
 

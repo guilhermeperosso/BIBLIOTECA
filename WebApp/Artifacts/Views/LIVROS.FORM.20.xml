@@ -75,14 +75,14 @@
         <renderTitle xsi:nil="true" />
       </FormFieldDefinition>
       <FormFieldDefinition key="EMPRESTADO" inherited="true">
-        <visible xsi:nil="true" />
+        <visible>false</visible>
         <DataAccessLevel xsi:nil="true" />
         <Required xsi:nil="true" />
         <HasScriptEvent xsi:nil="true" />
         <renderTitle>true</renderTitle>
       </FormFieldDefinition>
       <FormFieldDefinition key="NMEMPRESTIMOS" inherited="true">
-        <visible>true</visible>
+        <visible>false</visible>
         <DataAccessLevel xsi:nil="true" />
         <Required xsi:nil="true" />
         <HasScriptEvent xsi:nil="true" />

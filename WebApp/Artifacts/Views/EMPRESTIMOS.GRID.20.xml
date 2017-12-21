@@ -61,7 +61,7 @@
         <Width />
       </GridFieldDefinition>
       <GridFieldDefinition key="ATRASADO">
-        <visible>true</visible>
+        <visible>false</visible>
         <DataAccessLevel>Edit</DataAccessLevel>
         <Required xsi:nil="true" />
         <HasScriptEvent xsi:nil="true" />
@@ -137,13 +137,15 @@
         <context>Record</context>
         <ProcessDefinition xsi:type="Function" functionName="Devolver" />
       </Command>
-      <Command title="Pagar Multa" image="fa fa-dollar" color="green" key="CMD_PAGARMULTA">
+      <Command title="Visualizar Relatório" image="fa fa-paperclip" key="CMD_VISUALIZARELATORIO">
         <visible>true</visible>
         <showModal>false</showModal>
         <modalSize xsi:nil="true" />
         <showInAllLevelsStructuredTable>false</showInAllLevelsStructuredTable>
-        <context>Record</context>
-        <ProcessDefinition xsi:type="Function" functionName="PagarMulta" />
+        <context>Table</context>
+        <ProcessDefinition xsi:type="Report" reportName="Relatório de Empréstimos" reportId="RELATORIOEMPRESTIMOS" reportType="Stimulsoft" reportFormat="PDF" reportFormatSti="Prever">
+          <systemReport>false</systemReport>
+        </ProcessDefinition>
       </Command>
     </Commands>
   </GridDefinition>
